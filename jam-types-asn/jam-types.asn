@@ -213,6 +213,27 @@ WorkReport ::= SEQUENCE {
 }
 
 --------------------------------------------
+-- Ready queue
+--------------------------------------------
+
+ReadyRecord ::= SEQUENCE {
+    report WorkReport,
+    dependencies SEQUENCE OF WorkPackageHash
+}
+
+ReadyQueueItem ::= SEQUENCE OF ReadyRecord
+
+ReadyQueue ::= SEQUENCE (SIZE(epoch-length)) OF ReadyQueueItem
+
+--------------------------------------------
+-- Accumulated queue
+--------------------------------------------
+
+AccumulatedQueueItem ::= SEQUENCE OF WorkPackageHash 
+
+AccumulatedQueue ::= SEQUENCE (SIZE(epoch-length)) OF AccumulatedQueueItem
+
+--------------------------------------------
 -- Block History
 --------------------------------------------
 

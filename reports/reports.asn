@@ -5,7 +5,7 @@ ReportsModule DEFINITIONS ::= BEGIN
 IMPORTS
     cores-count, OpaqueHash, TimeSlot, EntropyBuffer,
     ServiceId, ServiceInfo, ValidatorsData, BlocksHistory, AvailabilityAssignments,
-    GuaranteesExtrinsic, Ed25519Public, WorkPackageHash
+    GuaranteesExtrinsic, Ed25519Public, WorkPackageHash, ReadyQueue, AccumulatedQueue
         FROM JamTypes;
 
 
@@ -40,6 +40,12 @@ State ::= SEQUENCE {
 
     -- [β] Recent blocks.
     recent-blocks BlocksHistory,
+
+    -- [ξ] Recently accumulated work packages.
+    accumulated AccumulatedQueue,
+
+    -- [φ] Ready to be accumulated work packages.
+    ready-queue ReadyQueue,
 
     -- [α] Authorization pools.
     auth-pools AuthPools,
