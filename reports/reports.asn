@@ -5,7 +5,7 @@ ReportsModule DEFINITIONS ::= BEGIN
 IMPORTS
     cores-count, OpaqueHash, TimeSlot, EntropyBuffer,
     ServiceId, ServiceInfo, ValidatorsData, BlocksHistory, AvailabilityAssignments,
-    GuaranteesExtrinsic, Ed25519Public, WorkPackageHash, ReadyQueue, AccumulatedQueue
+    GuaranteesExtrinsic, Ed25519Public, WorkPackageHash
         FROM JamTypes;
 
 
@@ -41,12 +41,6 @@ State ::= SEQUENCE {
     -- [β] Recent blocks.
     recent-blocks BlocksHistory,
 
-    -- [ξ] Recently accumulated work packages.
-    accumulated AccumulatedQueue,
-
-    -- [φ] Ready to be accumulated work packages.
-    ready-queue ReadyQueue,
-
     -- [α] Authorization pools.
     auth-pools AuthPools,
 
@@ -59,7 +53,13 @@ Input ::= SEQUENCE {
     guarantees GuaranteesExtrinsic,
 
     -- [H_t] Block's timeslot.
-    slot TimeSlot
+    slot TimeSlot,
+
+    -- [f(ξ,φ,β,ρ)] A sequence constructed from all packages found in the
+    -- following sources from the prior state: recent block history (β),
+    -- recently accumulated work packages (ξ), ready-to-be-accumulated packages (φ),
+    -- and availability assignments (ρ).
+    known-packages SEQUENCE OF WorkPackageHash
 }
 
 ReportedPackage ::= SEQUENCE {

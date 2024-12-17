@@ -24,16 +24,21 @@ processing procedures, you may disregard them as necessary.
 A mapping of error code semantics is provided within the ASN.1 schema for this
 subsystem.
 
-## Previously Reported Packages
+## ⚠️ Previously Reported Packages ⚠️
 
-To verify that the reported packages have not already been reported,
-the GP prescribes checking that each package is not included in the set
-constructed from all packages found in the following sources from the prior
-state: recent block history (β), recently accumulated work packages (ξ),
-ready-to-be-accumulated packages (φ), and availability assignments (ρ).
+To ensure that the reported packages have not already been processed, the GP
+require verifying that each package is not included in a set derived from
+all packages found in the following sources from the prior state: recent block
+history (β), recently accumulated work packages (ξ), ready-to-be-accumulated
+packages (φ), and availability assignments (ρ).
 
-At present, the accumulated set and ready queue are left empty. There are plans
-to introduce additional tests in the near future to improve duplicate detection.
+For simplicity, and to avoid the effort of constructing dummy structures, we
+utilize a pre-constructed sequence of "known-packages," which is assumed to have
+been derived from the aforementioned sources.
+
+The specific origin of the packages is not relevant for this STF progress, with
+the only requirement being that all packages from intermediate core assignments
+(ρ‡) and block history (β) must be contained within this sequence.
 
 ## Tiny Vectors
 
