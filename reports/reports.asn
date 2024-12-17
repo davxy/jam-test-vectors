@@ -53,7 +53,13 @@ Input ::= SEQUENCE {
     guarantees GuaranteesExtrinsic,
 
     -- [H_t] Block's timeslot.
-    slot TimeSlot
+    slot TimeSlot,
+
+    -- [f(ξ,φ,β,ρ)] A sequence constructed from all packages found in the
+    -- following sources from the prior state: recent block history (β),
+    -- recently accumulated work packages (ξ), ready-to-be-accumulated packages (φ),
+    -- and availability assignments (ρ).
+    known-packages SEQUENCE OF WorkPackageHash
 }
 
 ReportedPackage ::= SEQUENCE {
