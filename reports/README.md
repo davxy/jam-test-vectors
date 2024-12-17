@@ -24,6 +24,17 @@ processing procedures, you may disregard them as necessary.
 A mapping of error code semantics is provided within the ASN.1 schema for this
 subsystem.
 
+## Previously Reported Packages
+
+To verify that the reported packages have not already been reported,
+the GP prescribes checking that each package is not included in the set
+constructed from all packages found in the following sources from the prior
+state: recent block history (β), recently accumulated work packages (ξ),
+ready-to-be-accumulated packages (φ), and availability assignments (ρ).
+
+At present, the accumulated set and ready queue are left empty. There are plans
+to introduce additional tests in the near future to improve duplicate detection.
+
 ## Tiny Vectors
 
 - [report_curr_rotation](./tiny/report_curr_rotation-1.json) 🟢
