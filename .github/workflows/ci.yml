@@ -23,7 +23,9 @@ jobs:
       - name: Install dependencies
         run: |
           pip install git+https://github.com/davxy/jam-codec-py.git@rename-to-jam-codec
-          # pip install git+https://github.com/davxy/jam-types-py.git@v0.6.7
+      - name: Convert
+        run: ./scripts/convert-all.sh
+
 
   validate:
     runs-on: ubuntu-latest
