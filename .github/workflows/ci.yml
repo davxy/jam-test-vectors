@@ -22,7 +22,7 @@ jobs:
           python-version: '3.8'
       - name: Install dependencies
         run: |
-          pip install git+https://github.com/davxy/jam-types-py.git
+          pip install git+https://github.com/davxy/jam-types-py.git@v0.6.7
 
   validate:
     runs-on: ubuntu-latest
