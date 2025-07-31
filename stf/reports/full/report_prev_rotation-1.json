@@ -17205,9 +17205,18 @@
                 }
             ],
             "reporters": [
-                "0x72b44f671cd8a9f089c2e063691e6105f762edc10edeb0773bfa6817cc1ba217",
-                "0xaa44cbccea97369756538025bf21e49b07d56c3473794ef4b23b1a2c8a7deb63",
-                "0xf9b5cf6a80b0f45abcb550497e195ac34bebd1556557fbc067613c7b6ae3fe8f"
+                {
+                    "key": "0x72b44f671cd8a9f089c2e063691e6105f762edc10edeb0773bfa6817cc1ba217",
+                    "count": 1
+                },
+                {
+                    "key": "0xaa44cbccea97369756538025bf21e49b07d56c3473794ef4b23b1a2c8a7deb63",
+                    "count": 1
+                },
+                {
+                    "key": "0xf9b5cf6a80b0f45abcb550497e195ac34bebd1556557fbc067613c7b6ae3fe8f",
+                    "count": 1
+                }
             ]
         }
     },

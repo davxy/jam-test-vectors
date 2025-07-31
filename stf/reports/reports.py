@@ -16,6 +16,8 @@ from jam_types import (
     CoresStatistics,
     ServicesStatistics,
     RecentBlocks,
+    Ed25519Public,
+    U32,
 )
 from jam_types import class_name as n
 
@@ -58,10 +60,16 @@ class ReportedItem(Struct):
         ('segment_tree_root', n(SegmentTreeRoot))
     ]
 
+class ReportsReporter(Struct):
+    type_mapping = [
+        ('key', n(Ed25519Public)),
+        ('count', n(U32))
+    ]
+
 class ReportsOutputData(Struct):
     type_mapping = [
         ('reported', 'Vec<ReportedItem>'),
-        ('reporters', 'Vec<Ed25519Public>')
+        ('reporters', 'Vec<ReportsReporter>')
     ]
 
 class ReportsOutput(Enum):

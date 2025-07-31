@@ -17270,12 +17270,30 @@
                 }
             ],
             "reporters": [
-                "0x273374b8819e33bbdc750365a2851743e40bbbbb115cfe9f72ddb9360a5f0cd2",
-                "0x43e08aedbce98c45b9d8bf6d4dd94b112d0bbf20967ac5eb544b55708c780013",
-                "0x4b3a344ebeb38f955acc84f10a9284d7ad43609463bccfef7eb6996c366a6bb0",
-                "0x9ad065f1ff3e1e0e6ca4594998c5d3abb965914723f6be92dc05951d669f72dd",
-                "0xbc5b145abde0d7edf5c93e1a94cbaa2bc55b707b5ac7a2092e511ad9db93b5ff",
-                "0xdad07bbe0b2eee586f11884b1b97b7274e63b28ab005db3bb786c45f7ab92d29"
+                {
+                    "key": "0x273374b8819e33bbdc750365a2851743e40bbbbb115cfe9f72ddb9360a5f0cd2",
+                    "count": 1
+                },
+                {
+                    "key": "0x43e08aedbce98c45b9d8bf6d4dd94b112d0bbf20967ac5eb544b55708c780013",
+                    "count": 1
+                },
+                {
+                    "key": "0x4b3a344ebeb38f955acc84f10a9284d7ad43609463bccfef7eb6996c366a6bb0",
+                    "count": 1
+                },
+                {
+                    "key": "0x9ad065f1ff3e1e0e6ca4594998c5d3abb965914723f6be92dc05951d669f72dd",
+                    "count": 1
+                },
+                {
+                    "key": "0xbc5b145abde0d7edf5c93e1a94cbaa2bc55b707b5ac7a2092e511ad9db93b5ff",
+                    "count": 1
+                },
+                {
+                    "key": "0xdad07bbe0b2eee586f11884b1b97b7274e63b28ab005db3bb786c45f7ab92d29",
+                    "count": 1
+                }
             ]
         }
     },

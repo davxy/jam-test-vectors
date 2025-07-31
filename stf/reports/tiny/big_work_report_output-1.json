@@ -304,9 +304,18 @@
                 }
             ],
             "reporters": [
-                "0x8b8c5d436f92ecf605421e873a99ec528761eb52a88a2f9a057b3b3003e6f32a",
-                "0xab0084d01534b31c1dd87c81645fd762482a90027754041ca1b56133d0466c06",
-                "0xad93247bd01307550ec7acd757ce6fb805fcf73db364063265b30a949e90d933"
+                {
+                    "key": "0x8b8c5d436f92ecf605421e873a99ec528761eb52a88a2f9a057b3b3003e6f32a",
+                    "count": 1
+                },
+                {
+                    "key": "0xab0084d01534b31c1dd87c81645fd762482a90027754041ca1b56133d0466c06",
+                    "count": 1
+                },
+                {
+                    "key": "0xad93247bd01307550ec7acd757ce6fb805fcf73db364063265b30a949e90d933",
+                    "count": 1
+                }
             ]
         }
     },
