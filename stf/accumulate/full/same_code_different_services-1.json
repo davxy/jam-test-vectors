@@ -20,6 +20,7 @@
                 },
                 "core_index": 0,
                 "authorizer_hash": "0xef32090fcef161996cb9ff3d4fd4aaccef08fbf8cfedcd4728a7b7927e76ad2c",
+                "auth_gas_used": 10,
                 "auth_output": "0x",
                 "segment_root_lookup": [],
                 "results": [
@@ -39,8 +40,7 @@
                             "exports": 0
                         }
                     }
-                ],
-                "auth_gas_used": 10
+                ]
             },
             {
                 "package_spec": {
@@ -60,6 +60,7 @@
                 },
                 "core_index": 1,
                 "authorizer_hash": "0x7865361073b31347cb9b53f12800084563f134c97990a3a16d365640211b58fb",
+                "auth_gas_used": 10,
                 "auth_output": "0x",
                 "segment_root_lookup": [],
                 "results": [
@@ -79,8 +80,7 @@
                             "exports": 0
                         }
                     }
-                ],
-                "auth_gas_used": 10
+                ]
             }
         ]
     },

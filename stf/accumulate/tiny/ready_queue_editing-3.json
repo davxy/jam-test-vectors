@@ -20,6 +20,7 @@
                 },
                 "core_index": 0,
                 "authorizer_hash": "0xeefd84c154d6781c5c315084aa52fff4bf7b606be7f830867bc94a4797078d0d",
+                "auth_gas_used": 10,
                 "auth_output": "0x",
                 "segment_root_lookup": [],
                 "results": [
@@ -39,8 +40,7 @@
                             "exports": 0
                         }
                     }
-                ],
-                "auth_gas_used": 10
+                ]
             }
         ]
     },
@@ -79,6 +79,7 @@
                         },
                         "core_index": 0,
                         "authorizer_hash": "0xddd61398037e2d0ea720ed134a5955853bfa7d4ae78fea6499084e3db4e49118",
+                        "auth_gas_used": 10,
                         "auth_output": "0x",
                         "segment_root_lookup": [],
                         "results": [
@@ -98,8 +99,7 @@
                                     "exports": 0
                                 }
                             }
-                        ],
-                        "auth_gas_used": 10
+                        ]
                     },
                     "dependencies": [
                         "0x18176cfbff4a8b40f2d9cba3c2ddc4a5b75e9152c8c41452cda90bebc0632013",
@@ -128,6 +128,7 @@
                         },
                         "core_index": 1,
                         "authorizer_hash": "0x30462b1e02ed2d1d536e4250d7412fe0168d9df8aa2467708c36053afbe99e6f",
+                        "auth_gas_used": 10,
                         "auth_output": "0x",
                         "segment_root_lookup": [],
                         "results": [
@@ -147,8 +148,7 @@
                                     "exports": 0
                                 }
                             }
-                        ],
-                        "auth_gas_used": 10
+                        ]
                     },
                     "dependencies": [
                         "0x18176cfbff4a8b40f2d9cba3c2ddc4a5b75e9152c8c41452cda90bebc0632013"
@@ -178,6 +178,7 @@
                         },
                         "core_index": 1,
                         "authorizer_hash": "0x6e488790b201af0e7b426a3a970d06b7d05050ce4f608c9127d27bdf3294d993",
+                        "auth_gas_used": 10,
                         "auth_output": "0x",
                         "segment_root_lookup": [],
                         "results": [
@@ -197,8 +198,7 @@
                                     "exports": 0
                                 }
                             }
-                        ],
-                        "auth_gas_used": 10
+                        ]
                     },
                     "dependencies": [
                         "0x18176cfbff4a8b40f2d9cba3c2ddc4a5b75e9152c8c41452cda90bebc0632013",
@@ -324,6 +324,7 @@
                         },
                         "core_index": 1,
                         "authorizer_hash": "0x6e488790b201af0e7b426a3a970d06b7d05050ce4f608c9127d27bdf3294d993",
+                        "auth_gas_used": 10,
                         "auth_output": "0x",
                         "segment_root_lookup": [],
                         "results": [
@@ -343,8 +344,7 @@
                                     "exports": 0
                                 }
                             }
-                        ],
-                        "auth_gas_used": 10
+                        ]
                     },
                     "dependencies": [
                         "0x27d0350039fb3d068cccfae902bf2e72583fc553e0aafb960bd9d76d5bff777b"

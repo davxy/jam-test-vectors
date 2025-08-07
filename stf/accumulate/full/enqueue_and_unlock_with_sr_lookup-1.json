@@ -20,6 +20,7 @@
                 },
                 "core_index": 1,
                 "authorizer_hash": "0x49864dfcdf297dcea2502a4dd85798e07be9c842862ce3f482146294c9bb6e07",
+                "auth_gas_used": 10,
                 "auth_output": "0x",
                 "segment_root_lookup": [
                     {
@@ -44,8 +45,7 @@
                             "exports": 0
                         }
                     }
-                ],
-                "auth_gas_used": 10
+                ]
             }
         ]
     },
@@ -1702,6 +1702,7 @@
                         },
                         "core_index": 1,
                         "authorizer_hash": "0x49864dfcdf297dcea2502a4dd85798e07be9c842862ce3f482146294c9bb6e07",
+                        "auth_gas_used": 10,
                         "auth_output": "0x",
                         "segment_root_lookup": [
                             {
@@ -1726,8 +1727,7 @@
                                     "exports": 0
                                 }
                             }
-                        ],
-                        "auth_gas_used": 10
+                        ]
                     },
                     "dependencies": [
                         "0x2a762f984bcb960c32e78fb31b648c3bab5b8ebc0ac2b945f936d30cdc4bec9c"

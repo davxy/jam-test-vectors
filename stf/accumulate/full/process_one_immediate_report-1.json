@@ -20,6 +20,7 @@
                 },
                 "core_index": 1,
                 "authorizer_hash": "0xbf52de5ab6e18f3a407ae0952c67b624a56a6eafd7c40feb2ade331a18b4c929",
+                "auth_gas_used": 10,
                 "auth_output": "0x",
                 "segment_root_lookup": [],
                 "results": [
@@ -39,8 +40,7 @@
                             "exports": 0
                         }
                     }
-                ],
-                "auth_gas_used": 10
+                ]
             }
         ]
     },
