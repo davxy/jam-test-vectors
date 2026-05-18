@@ -7,7 +7,6 @@ from jam_types import (
     Enum,
     EpochMark,
     Struct,
-    TicketAttempt,
     TicketBody,
     TicketEnvelope,
     TicketId,
