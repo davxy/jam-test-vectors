@@ -41,16 +41,15 @@ ErrorCode ::= ENUMERATED {
     judgements-not-sorted-unique (3),
     culprits-not-sorted-unique (4),
     faults-not-sorted-unique (5),
-    not-enough-culprits (6),
-    not-enough-faults (7),
-    culprits-verdict-not-bad (8),
-    fault-verdict-wrong (9),
-    offender-already-reported (10),
-    bad-judgement-age (11),
-    bad-validator-index (12),
-    bad-signature (13),
-    bad-guarantor-key (14),
-    bad-auditor-key (15)
+    not-enough-faults (6),
+    culprits-verdict-not-bad (7),
+    fault-verdict-wrong (8),
+    offender-already-reported (9),
+    bad-judgement-age (10),
+    bad-validator-index (11),
+    bad-signature (12),
+    bad-guarantor-key (13),
+    bad-auditor-key (14)
 }
 
 Output ::= CHOICE {

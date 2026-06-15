@@ -50,14 +50,13 @@ class DisputesTestVector(StfTestVector):
         3: "judgements_not_sorted_unique",
         4: "culprits_not_sorted_unique",
         5: "faults_not_sorted_unique",
-        6: "not_enough_culprits",
-        7: "not_enough_faults",
-        8: "culprits_verdict_not_bad",
-        9: "fault_verdict_wrong",
-        10: "offender_already_reported",
-        11: "bad_judgement_age",
-        12: "bad_validator_index",
-        13: "bad_signature",
-        14: "bad_guarantor_key",
-        15: "bad_auditor_key"
+        6: "not_enough_faults",
+        7: "culprits_verdict_not_bad",
+        8: "fault_verdict_wrong",
+        9: "offender_already_reported",
+        10: "bad_judgement_age",
+        11: "bad_validator_index",
+        12: "bad_signature",
+        13: "bad_guarantor_key",
+        14: "bad_auditor_key"
     }
