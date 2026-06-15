@@ -29,19 +29,15 @@ tests that verify the invalidation of assignments following a verdict.
 - [progress_with_verdicts-6](tiny/progress_with_verdicts-6.json) 🟢
   - Not homogeneous judgements, results in wonky verdict
 - [progress_with_culprits-1](tiny/progress_with_culprits-1.json) 🔴
-  - Missing culprits for bad verdict
-- [progress_with_culprits-2](tiny/progress_with_culprits-2.json) 🔴
-  - Single culprit for bad verdict
-- [progress_with_culprits-3](tiny/progress_with_culprits-3.json) 🔴
   - Two culprits for bad verdict, not sorted
-- [progress_with_culprits-4](tiny/progress_with_culprits-4.json) 🟢
+- [progress_with_culprits-2](tiny/progress_with_culprits-2.json) 🟢
   - Two culprits for bad verdict, sorted
-- [progress_with_culprits-5](tiny/progress_with_culprits-5.json) 🔴
-  - Report an already recorded verdict, with culprits
-- [progress_with_culprits-6](tiny/progress_with_culprits-6.json) 🔴
+- [progress_with_culprits-3](tiny/progress_with_culprits-3.json) 🔴
+  - Report an already recorded bad verdict
+- [progress_with_culprits-4](tiny/progress_with_culprits-4.json) 🔴
   - Culprit offender already in the offenders list
-- [progress_with_culprits-7](tiny/progress_with_culprits-7.json) 🔴
-  - Offender relative to a not present verdict
+- [progress_with_culprits-5](tiny/progress_with_culprits-5.json) 🔴
+  - Culprit relative to a target without a bad verdict
 - [progress_with_faults-1](tiny/progress_with_faults-1.json) 🔴
   - Missing faults for good verdict
 - [progress_with_faults-2](tiny/progress_with_faults-2.json) 🟢
