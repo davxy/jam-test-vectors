@@ -706,6 +706,7 @@
                     "extrinsic_size": 3452,
                     "exports": 35,
                     "accumulate_count": 0,
+                    "accumulate_transfer_count": 0,
                     "accumulate_gas_used": 0
                 }
             }

@@ -3280,6 +3280,7 @@
                     "extrinsic_size": 0,
                     "exports": 0,
                     "accumulate_count": 1,
+                    "accumulate_transfer_count": 0,
                     "accumulate_gas_used": 24781
                 }
             },
@@ -3295,6 +3296,7 @@
                     "extrinsic_size": 0,
                     "exports": 0,
                     "accumulate_count": 1,
+                    "accumulate_transfer_count": 0,
                     "accumulate_gas_used": 0
                 }
             }
