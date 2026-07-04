@@ -12,10 +12,12 @@
                 },
                 "context": {
                     "anchor": "0xced16a60f39f8301f9570700a3e0a4f8102b5b140281c454b40c20c0070f52e7",
+                    "anchor_slot": 0,
                     "state_root": "0xbf3cd248797e73bfb1c35ac59e5114c2d73f90435c9c504c8d279537aa84909d",
                     "beefy_root": "0x3bec0d644b5790afd619d71fa19461dc5adf2aec96a86da1e3cdf410feb34b6e",
                     "lookup_anchor": "0x026a56bab72f90fd17289a9097ffe6643d2e545f58d1e036f21b1e8281d7b6d9",
                     "lookup_anchor_slot": 40,
+                    "lookup_anchor_state_root": "0xc69b4592607fdf5aa23c957b2f093c4ba21dd11fa0a298013932e8d9e0efeb4d",
                     "prerequisites": []
                 },
                 "core_index": 1,

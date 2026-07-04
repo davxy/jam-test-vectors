@@ -12,10 +12,12 @@
                 },
                 "context": {
                     "anchor": "0x1476ee70ffd056b65adaafd259c94cea0c266b8071b2449d2c0244af04bd6fb4",
+                    "anchor_slot": 0,
                     "state_root": "0xed202eedd6be871c4972dbe2c2af3f478b37c79246cc7be5f24b9d93c3b3ea0d",
                     "beefy_root": "0x35e4fc159feecabbb7556a0076924ba819e32a0bb785203a44c0d70d0bc135cf",
                     "lookup_anchor": "0xd049f65219cf3e7ed17ea6ff6345cc7d5fdbf4778b56197728259cd041356c33",
                     "lookup_anchor_slot": 40,
+                    "lookup_anchor_state_root": "0xc79f1a39b4647e74c9a4814eec12f7020ba5bdb156d6cc800bbb004121c9b9c2",
                     "prerequisites": []
                 },
                 "core_index": 1,
@@ -1707,10 +1709,12 @@
                         },
                         "context": {
                             "anchor": "0x1476ee70ffd056b65adaafd259c94cea0c266b8071b2449d2c0244af04bd6fb4",
+                            "anchor_slot": 0,
                             "state_root": "0xed202eedd6be871c4972dbe2c2af3f478b37c79246cc7be5f24b9d93c3b3ea0d",
                             "beefy_root": "0x35e4fc159feecabbb7556a0076924ba819e32a0bb785203a44c0d70d0bc135cf",
                             "lookup_anchor": "0xd049f65219cf3e7ed17ea6ff6345cc7d5fdbf4778b56197728259cd041356c33",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0xc79f1a39b4647e74c9a4814eec12f7020ba5bdb156d6cc800bbb004121c9b9c2",
                             "prerequisites": []
                         },
                         "core_index": 1,

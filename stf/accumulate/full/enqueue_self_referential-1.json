@@ -12,10 +12,12 @@
                 },
                 "context": {
                     "anchor": "0x16cb674febfdfa48b7d52b7ffad5e80611be837ca8e5df9aff162df5a9d08ae1",
+                    "anchor_slot": 0,
                     "state_root": "0x44862ced1f4617b2661f6ad6e5401c8534f0ba2e8b183d487f11f2925f37ec88",
                     "beefy_root": "0x036129985e01a4a2d5bf15d812e0648a3f281eb7c0c9b0e4be06cdbf9c07d824",
                     "lookup_anchor": "0x3bfe97e04da45752d818f3fbc59059e49b6106bdd723067ab4b7a41e6219007f",
                     "lookup_anchor_slot": 40,
+                    "lookup_anchor_state_root": "0x6e413e0213b50833774ae1ba2980d70cd32f4a2ed4d2940e951fc1b448dac3dd",
                     "prerequisites": [
                         "0x774935b629cc42513a66c8ed1a09f88b00fe35689032bafd5a26d52f464c4808"
                     ]
@@ -1704,10 +1706,12 @@
                         },
                         "context": {
                             "anchor": "0x16cb674febfdfa48b7d52b7ffad5e80611be837ca8e5df9aff162df5a9d08ae1",
+                            "anchor_slot": 0,
                             "state_root": "0x44862ced1f4617b2661f6ad6e5401c8534f0ba2e8b183d487f11f2925f37ec88",
                             "beefy_root": "0x036129985e01a4a2d5bf15d812e0648a3f281eb7c0c9b0e4be06cdbf9c07d824",
                             "lookup_anchor": "0x3bfe97e04da45752d818f3fbc59059e49b6106bdd723067ab4b7a41e6219007f",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x6e413e0213b50833774ae1ba2980d70cd32f4a2ed4d2940e951fc1b448dac3dd",
                             "prerequisites": [
                                 "0x774935b629cc42513a66c8ed1a09f88b00fe35689032bafd5a26d52f464c4808"
                             ]

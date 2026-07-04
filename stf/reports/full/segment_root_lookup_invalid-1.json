@@ -12,10 +12,12 @@
                     },
                     "context": {
                         "anchor": "0xdc3c07af9aa6b0ff4942641e43ce466c2172b31cdce3e04e7067045d606d3149",
+                        "anchor_slot": 603,
                         "state_root": "0xb5462111962e9000c3822eb631e619bb091b2b5dac73816874c0243f392065fb",
                         "beefy_root": "0xc006121a8035c0600469b1b708c1ad794ac74b3dbebd9c494d3ca2a1659df705",
                         "lookup_anchor": "0x0537b8b8fc9dd52c40d02f2c960c184ae45c4d8c92946d551662ab45374f883d",
                         "lookup_anchor_slot": 597,
+                        "lookup_anchor_state_root": "0x2831b9a7027ae89643aa9c534f52c20128885dce8028d4bf1a679e567a699e05",
                         "prerequisites": []
                     },
                     "core_index": 0,
@@ -51,15 +53,15 @@
                 "signatures": [
                     {
                         "validator_index": 16,
-                        "signature": "0x095ff572dbe6e4c96b500cd7e74a541bcf30ccc625bcb6a83fc491f4a04e03b4c343e1d686a344fe53629e59b2b3dc2f05aed16662f2405d7e6d5c42c4eb7b0b"
+                        "signature": "0x6811d60b53fa70b57f91de54610c2bf17fc7914e072336b896ddafe6cfa2119a6c10993f21afb0fa6e976f730e1d0fda2e91c0438db3deb5a9af6dde79a16e0a"
                     },
                     {
                         "validator_index": 450,
-                        "signature": "0xed7d49aa627aba44b1d7778c17ed77614549379925afb536dc483bb337b77329e7a1febca381592eeb1288975f00ec1699c20b7c073aa17e33c85f59c03de20a"
+                        "signature": "0x7ae5ab0b1951e3349dd6e4d5bc7335b05bdc1be5de8843bab4bf9a925c1335fd7d7650b8988f244fa139ea7e2f512bf776925aec3148eadc7fb86feab1a1580f"
                     },
                     {
                         "validator_index": 1014,
-                        "signature": "0x76226b082f8e44377323ba61f9c27e1cf184be5b0756a672eee4e400dd732089a08e12883e9d511af737b1fc2f334c8688db1fe582060b6c5ba7815379ac420c"
+                        "signature": "0x7dbf069ffa1104e559555248f1ab174ecbd9ffe2d905fff6239f981efd86f1b4c6aa565a6349a7c65ffffa54694783476977891f5f67b6cb53e0ef9c6715d809"
                     }
                 ]
             }
@@ -12835,6 +12837,7 @@
                     "header_hash": "0x3a7c9299d2beea125f77049aacf099d3b817576e0f2d1c601f16ee68a2045da3",
                     "beefy_root": "0x3e659b1cff43941e72a1a8ff4786aa7e04bd3a4de671865afa0477f8b9248997",
                     "state_root": "0xe11ebed5c7846e0539208eca3284c2480d6d99f47f8e0a753ca09e9dfcbbc100",
+                    "slot": 597,
                     "reported": [
                         {
                             "hash": "0x125e48195c8535ac95b9e175fa54ffef471c4ccd50267c75014fc7fdbbdc9471",
@@ -12926,6 +12929,7 @@
                     "header_hash": "0x0f520ef99a40ab4d0c3985a87a1e674f4795f60c5dafc340fb3781438696a956",
                     "beefy_root": "0xef7135d2dfee26358d2229b7abc9fcf63bd012afc8a5aa0c468cf9c462e01ccc",
                     "state_root": "0x6760849f130257642254f33c21e2c779a4b0f31298ce7707e6cc335c90dfcde0",
+                    "slot": 598,
                     "reported": [
                         {
                             "hash": "0x10c253e6fe4931fc061a4ddb954ea3d7700bcda3805f1b68d95ed9a9e4eb867d",
@@ -13057,12 +13061,14 @@
                     "header_hash": "0x5ef26bd57919ab2a81f5c0fb0f948b2d2bd074e33952e40787b2455afe3da89c",
                     "beefy_root": "0x1e2cf971b392124ad3edf085caadc1a3772bfc466f9df2dff898d84be3fe75b1",
                     "state_root": "0xe5ebd6aeddbb4a916c89c85335eee54e4d9cb4ca8ba68af6d0111dc8d6203b64",
+                    "slot": 599,
                     "reported": []
                 },
                 {
                     "header_hash": "0xde0db923a8707aa9871309942814150dc46abf8567541a91a75db91c6d074617",
                     "beefy_root": "0x0cbca510bd78a4800f86e3a53f4c36010597e4ea712fee848cf901ead1c070bd",
                     "state_root": "0xcbd0759945c0954d1f0958bc9c84ec67626cafdbff1c2f81643f098f7420b2f8",
+                    "slot": 600,
                     "reported": [
                         {
                             "hash": "0x3bf2184936aca101f44fa15f1f7e6ef9c4ebff8d05cd9057da4cc77f40e30bdf",
@@ -13086,6 +13092,7 @@
                     "header_hash": "0x0537b8b8fc9dd52c40d02f2c960c184ae45c4d8c92946d551662ab45374f883d",
                     "beefy_root": "0x1d2215a9d91a0c55471093584bdd664e30c0cae5c170bcd7af5fe3351a292eac",
                     "state_root": "0x2831b9a7027ae89643aa9c534f52c20128885dce8028d4bf1a679e567a699e05",
+                    "slot": 601,
                     "reported": [
                         {
                             "hash": "0x138f1aaa651c7bc4904e1113b8b15d443a3349ca179019bf46280be05b6ab702",
@@ -13161,6 +13168,7 @@
                     "header_hash": "0x78521633e457ef1943452e3dc1ed3c8261cc7a06adf67d57523ea3c56d2930bd",
                     "beefy_root": "0x7489467f325608730e818ff26063bfc376942fba99aa12e96c3f339d5dcc5663",
                     "state_root": "0x1e06b44d219f2167b58d77e73a0078dd2f988a9a4d1a2e244eb7832d163e73f9",
+                    "slot": 602,
                     "reported": [
                         {
                             "hash": "0x04693ddab673e04dd065e45dfc145277088ed9464c8b249d9912cdb34a774f3d",
@@ -13292,6 +13300,7 @@
                     "header_hash": "0xdc3c07af9aa6b0ff4942641e43ce466c2172b31cdce3e04e7067045d606d3149",
                     "beefy_root": "0xc006121a8035c0600469b1b708c1ad794ac74b3dbebd9c494d3ca2a1659df705",
                     "state_root": "0xb5462111962e9000c3822eb631e619bb091b2b5dac73816874c0243f392065fb",
+                    "slot": 603,
                     "reported": [
                         {
                             "hash": "0x06d9cd3a1d33f64016f03bbf7e2afb5ca9835144fc767617eeadc0996a9f0257",
@@ -13347,6 +13356,7 @@
                     "header_hash": "0x76ede0f5df617cc6eac6722ba480759905541816601d9646ac23a38eafb5d0f8",
                     "beefy_root": "0xb970e9463c76c89ab9ccec3b9873f102ecda664f8b391c37b3417de6a6ffb96a",
                     "state_root": "0x34d60541a63ea988e4af5db46c175903c2a3f23ce9ee7f3e4d75941c1efcbc95",
+                    "slot": 604,
                     "reported": [
                         {
                             "hash": "0x1c3f74ff8d565ff1d3f539208b7f1d282e96faada4d33d5aac67a64bd6201d0f",
@@ -29842,6 +29852,7 @@
                     "header_hash": "0x3a7c9299d2beea125f77049aacf099d3b817576e0f2d1c601f16ee68a2045da3",
                     "beefy_root": "0x3e659b1cff43941e72a1a8ff4786aa7e04bd3a4de671865afa0477f8b9248997",
                     "state_root": "0xe11ebed5c7846e0539208eca3284c2480d6d99f47f8e0a753ca09e9dfcbbc100",
+                    "slot": 597,
                     "reported": [
                         {
                             "hash": "0x125e48195c8535ac95b9e175fa54ffef471c4ccd50267c75014fc7fdbbdc9471",
@@ -29933,6 +29944,7 @@
                     "header_hash": "0x0f520ef99a40ab4d0c3985a87a1e674f4795f60c5dafc340fb3781438696a956",
                     "beefy_root": "0xef7135d2dfee26358d2229b7abc9fcf63bd012afc8a5aa0c468cf9c462e01ccc",
                     "state_root": "0x6760849f130257642254f33c21e2c779a4b0f31298ce7707e6cc335c90dfcde0",
+                    "slot": 598,
                     "reported": [
                         {
                             "hash": "0x10c253e6fe4931fc061a4ddb954ea3d7700bcda3805f1b68d95ed9a9e4eb867d",
@@ -30064,12 +30076,14 @@
                     "header_hash": "0x5ef26bd57919ab2a81f5c0fb0f948b2d2bd074e33952e40787b2455afe3da89c",
                     "beefy_root": "0x1e2cf971b392124ad3edf085caadc1a3772bfc466f9df2dff898d84be3fe75b1",
                     "state_root": "0xe5ebd6aeddbb4a916c89c85335eee54e4d9cb4ca8ba68af6d0111dc8d6203b64",
+                    "slot": 599,
                     "reported": []
                 },
                 {
                     "header_hash": "0xde0db923a8707aa9871309942814150dc46abf8567541a91a75db91c6d074617",
                     "beefy_root": "0x0cbca510bd78a4800f86e3a53f4c36010597e4ea712fee848cf901ead1c070bd",
                     "state_root": "0xcbd0759945c0954d1f0958bc9c84ec67626cafdbff1c2f81643f098f7420b2f8",
+                    "slot": 600,
                     "reported": [
                         {
                             "hash": "0x3bf2184936aca101f44fa15f1f7e6ef9c4ebff8d05cd9057da4cc77f40e30bdf",
@@ -30093,6 +30107,7 @@
                     "header_hash": "0x0537b8b8fc9dd52c40d02f2c960c184ae45c4d8c92946d551662ab45374f883d",
                     "beefy_root": "0x1d2215a9d91a0c55471093584bdd664e30c0cae5c170bcd7af5fe3351a292eac",
                     "state_root": "0x2831b9a7027ae89643aa9c534f52c20128885dce8028d4bf1a679e567a699e05",
+                    "slot": 601,
                     "reported": [
                         {
                             "hash": "0x138f1aaa651c7bc4904e1113b8b15d443a3349ca179019bf46280be05b6ab702",
@@ -30168,6 +30183,7 @@
                     "header_hash": "0x78521633e457ef1943452e3dc1ed3c8261cc7a06adf67d57523ea3c56d2930bd",
                     "beefy_root": "0x7489467f325608730e818ff26063bfc376942fba99aa12e96c3f339d5dcc5663",
                     "state_root": "0x1e06b44d219f2167b58d77e73a0078dd2f988a9a4d1a2e244eb7832d163e73f9",
+                    "slot": 602,
                     "reported": [
                         {
                             "hash": "0x04693ddab673e04dd065e45dfc145277088ed9464c8b249d9912cdb34a774f3d",
@@ -30299,6 +30315,7 @@
                     "header_hash": "0xdc3c07af9aa6b0ff4942641e43ce466c2172b31cdce3e04e7067045d606d3149",
                     "beefy_root": "0xc006121a8035c0600469b1b708c1ad794ac74b3dbebd9c494d3ca2a1659df705",
                     "state_root": "0xb5462111962e9000c3822eb631e619bb091b2b5dac73816874c0243f392065fb",
+                    "slot": 603,
                     "reported": [
                         {
                             "hash": "0x06d9cd3a1d33f64016f03bbf7e2afb5ca9835144fc767617eeadc0996a9f0257",
@@ -30354,6 +30371,7 @@
                     "header_hash": "0x76ede0f5df617cc6eac6722ba480759905541816601d9646ac23a38eafb5d0f8",
                     "beefy_root": "0xb970e9463c76c89ab9ccec3b9873f102ecda664f8b391c37b3417de6a6ffb96a",
                     "state_root": "0x34d60541a63ea988e4af5db46c175903c2a3f23ce9ee7f3e4d75941c1efcbc95",
+                    "slot": 604,
                     "reported": [
                         {
                             "hash": "0x1c3f74ff8d565ff1d3f539208b7f1d282e96faada4d33d5aac67a64bd6201d0f",

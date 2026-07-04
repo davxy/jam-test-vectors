@@ -12,10 +12,12 @@
                 },
                 "context": {
                     "anchor": "0xced16a60f39f8301f9570700a3e0a4f8102b5b140281c454b40c20c0070f52e7",
+                    "anchor_slot": 0,
                     "state_root": "0xbf3cd248797e73bfb1c35ac59e5114c2d73f90435c9c504c8d279537aa84909d",
                     "beefy_root": "0x3bec0d644b5790afd619d71fa19461dc5adf2aec96a86da1e3cdf410feb34b6e",
                     "lookup_anchor": "0x026a56bab72f90fd17289a9097ffe6643d2e545f58d1e036f21b1e8281d7b6d9",
                     "lookup_anchor_slot": 40,
+                    "lookup_anchor_state_root": "0xc69b4592607fdf5aa23c957b2f093c4ba21dd11fa0a298013932e8d9e0efeb4d",
                     "prerequisites": []
                 },
                 "core_index": 1,
@@ -60,10 +62,12 @@
                         },
                         "context": {
                             "anchor": "0x16cb674febfdfa48b7d52b7ffad5e80611be837ca8e5df9aff162df5a9d08ae1",
+                            "anchor_slot": 0,
                             "state_root": "0x44862ced1f4617b2661f6ad6e5401c8534f0ba2e8b183d487f11f2925f37ec88",
                             "beefy_root": "0x036129985e01a4a2d5bf15d812e0648a3f281eb7c0c9b0e4be06cdbf9c07d824",
                             "lookup_anchor": "0x3bfe97e04da45752d818f3fbc59059e49b6106bdd723067ab4b7a41e6219007f",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x6e413e0213b50833774ae1ba2980d70cd32f4a2ed4d2940e951fc1b448dac3dd",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -107,10 +111,12 @@
                         },
                         "context": {
                             "anchor": "0x33926f279dad41c596e17ea3e5973c23e15c2030f95825a50d8ec2a41f0bcbae",
+                            "anchor_slot": 0,
                             "state_root": "0xbf45720986a0e0f9455972d951ccada04ea496fc2dfac0da9a4da4b5c8a0cde2",
                             "beefy_root": "0xbdb9486a4e898fd94a22801c2644a1c0ff38e391c20059f50506de3c9f24ccde",
                             "lookup_anchor": "0xf22a637ce7f290182f6616c5406179b4e6009018aec70a4e38670d42809a39c4",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x64328570c94f6f16338b624107809f6b5fb52ecdc94f9f0b85da65c6c8fdf689",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -154,10 +160,12 @@
                         },
                         "context": {
                             "anchor": "0x8435e4327dce719d22f4e4c22bed58e5046a795e5e1f8f3f7adbb4e01da738f7",
+                            "anchor_slot": 0,
                             "state_root": "0xb1469085e338699037dc8b65dfbcb396e8fdb1c5a76e3e66648768719b0a9543",
                             "beefy_root": "0x963974051f20a5e61590da566bc54261507ec55fcd86d7c0bfe3f2358526caf4",
                             "lookup_anchor": "0xddcd772fbba54834babdde66e3cbee23ec013be36316dd452b3e55aec30c1269",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x4dd72d0f2634a0cb246f8a3703be8cc1d6d05aa84e4cdaa93a747c22ab559ad2",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -201,10 +209,12 @@
                         },
                         "context": {
                             "anchor": "0xa4750f1bd13c3b2827c80d079cd80bf2d0f6933467062c80e7ccb74ef58b58f9",
+                            "anchor_slot": 0,
                             "state_root": "0xd5fab3b772854130b7eb90d43d551d6e2b4a938620aa4bcec9a3eb4804311927",
                             "beefy_root": "0x1291457aedb3f0dfb068dcdf4a8a59ec1459931cade168f5971e20198695c1f4",
                             "lookup_anchor": "0xd3b6f4209798b7619990964914908e9c933365281e236152d2902df89fd3b1e8",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x186a7f4ebfc7e334c73f05f715419192fa805acfb9967d233b86410bc713e74e",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -248,10 +258,12 @@
                         },
                         "context": {
                             "anchor": "0x56d9153b82e6d4ed4d5622dbc39cbbcddb5ccca1c6ffc07649acf89c14e61664",
+                            "anchor_slot": 0,
                             "state_root": "0x939f0d1b9b447e342a8521893921e11f61bec162c3d4301ec85f9a00dfc4125a",
                             "beefy_root": "0x1cd19794124afcbb9a20800b28326eaa463401f75dab37db041f9000e460a22d",
                             "lookup_anchor": "0xbab5dcbbeef9f56d05ff14d62bba2988b77e1ba8d71953ee72d77891b755d76c",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x8a210af7e4357382e4f44537cba8ff52d6738b20fa9b60f30ef38c85f951f4d9",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -295,10 +307,12 @@
                         },
                         "context": {
                             "anchor": "0xc56b6e120e0b45f3e67d79ec1214c30954e7de32538aa179606b515ef5d4eaa3",
+                            "anchor_slot": 0,
                             "state_root": "0xee58eed4bf627413f37342d153611b171e548e61dea9ab09b935c42f368c292e",
                             "beefy_root": "0x10df3b0a96d7dfe4a6ab83216cb60f610c2e77a428c52e14403d4f941947f9a6",
                             "lookup_anchor": "0x1cddc2a6a3e3b179ef9b8652a5904bcbcfbaa52f4fb71790b72677e48b807d83",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0xa9f94e36a4e34085be5d88853e6e6684f99e8d8d18a8d1645da552ee32ace03d",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -927,10 +941,12 @@
                         },
                         "context": {
                             "anchor": "0x27d710711a856709a10a48e45cb5def269f26d7168cb7b65e4b5b008ea15c665",
+                            "anchor_slot": 0,
                             "state_root": "0x12af96f715d08a72e5867203a4c17572ed625c912fe6a63ee8b35c81e03e401e",
                             "beefy_root": "0xe15fcd08e722279100e848e75976b0b388fbd24a7782fe46b7b803fe192514eb",
                             "lookup_anchor": "0x58ee421d1562b5e0385ba6f0e38e9ad6da1c128f8533ad6e46006ba0fc44e346",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x2cfc90e9390d0162d3844dd64feacef2e580802f930759eced6edc3e5aa1e369",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -974,10 +990,12 @@
                         },
                         "context": {
                             "anchor": "0xc69d50eb2b0ea3170f99e3675481443ce9b393a50d76be01d82c2f594e4c4e20",
+                            "anchor_slot": 0,
                             "state_root": "0x3eabdbc51fd919586314b1dadcff2b3a57e7b748d73738a4ce9633a05e86c8c4",
                             "beefy_root": "0x0d006c8fbfe505fc5c5149131012ceed452183139349910aac19bf1505cac828",
                             "lookup_anchor": "0x06e2d3b0d2fb9aaaf462408d2d0a5c02f5b80b4857842a8f67ad3721e426a658",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x4d5fa54cc0d3c43f9ac811e0aced49f6d6b4a778fd922f41ffae45a343fb7768",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -1021,10 +1039,12 @@
                         },
                         "context": {
                             "anchor": "0x0ad9a3b13afc323586cedaeeed0d02ba42a163165af9e4c9b9094f58803bc728",
+                            "anchor_slot": 0,
                             "state_root": "0x947a3787d0dfc6beeee8114251645ccea7768613171cefe27d3c2ee641b23f7f",
                             "beefy_root": "0xa4dbad917c3104bcdd20d5a12d52124f749fc27664ad735db2866f033fdf3738",
                             "lookup_anchor": "0x843e73f20d72618aca05f2fa7cb42859412c82fcf2461a888b7b0d6d9d4efa13",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0xb357bf5228d3caf946081564b5c456be8520f6f6869fe7cdc342df4e8eedaed3",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -1068,10 +1088,12 @@
                         },
                         "context": {
                             "anchor": "0x18fbbf9f25ccb9a07a42a91f32cc531d9c6a3b09bebdc73c57f9e24cbf8f3568",
+                            "anchor_slot": 0,
                             "state_root": "0xb2e7a5c3a4c8dd011549b0a2e718e8f910738b0a1a0923c6ea9f4d47c2a6fa89",
                             "beefy_root": "0x219e1c742d13a35ead46da28b2896b31aa9e9138b21166a091fa5a0b499f0497",
                             "lookup_anchor": "0x4bc0465b984f81667bb6ecfb4a971a7ad4dee758825c5ca43d4bf15c85e060db",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0xeb718693a286fcc812251370209ee6a0a2a06df40695c8cd4c811803e9c4dfcb",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -1115,10 +1137,12 @@
                         },
                         "context": {
                             "anchor": "0xec5c1f2750c212ce0a39f65f287477785ff9138fa9da18c956f23cd163144992",
+                            "anchor_slot": 0,
                             "state_root": "0x808fa3a2d99dd0f44c6f443ed0d41e1bfc292877871b151cf452e376e8e48dc6",
                             "beefy_root": "0x02092250f7b7666df86616b67159c6ec0cd87b06597169feeba5568eba215ce1",
                             "lookup_anchor": "0xa1f8a33d843bb57dbad22358b2cb2fd2fc2638b1af1350f1e0dda6848538a15f",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0xc138dea70092873985d7c94100b3fbe224580fc0bf5e9593cc667f8cdcb6b93a",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -1162,10 +1186,12 @@
                         },
                         "context": {
                             "anchor": "0x6bb472ab0029bc7074bdeab4adddb3884845570a41b1cf576db1c83d1501d9b0",
+                            "anchor_slot": 0,
                             "state_root": "0xfc0ad56643a25e43c885655edf3c644101744e6ff67e392099677c62ea463617",
                             "beefy_root": "0x65785020077b322f84555647debbb002a3252498114c39a88ef949eb5fc0b830",
                             "lookup_anchor": "0x127c9094d662d647b3f866003318da4c5d2198ea33883af9d7718c07ef459d50",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x72ac7e70b80f0ac9ca3deface9b444d542bc89ff9d2777e5e54754fd3287f463",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -1209,10 +1235,12 @@
                         },
                         "context": {
                             "anchor": "0x8bd8c0bb3a6f02ea8d6d913dac65dc905f39daf7511c38eee1f95b59c65b4e45",
+                            "anchor_slot": 0,
                             "state_root": "0x31d75ce34f861ad041d6cd6a05e4e595585989db4c83d1abad8d0826f9b926e2",
                             "beefy_root": "0x5004ba02b6126b8ca52c4693f111557b59d1f4777f0d9c7299fac35392b43331",
                             "lookup_anchor": "0xa173ac20d3bd1822170e50320d69fa4778ffadc79ae4b68b674c9b177f088c9d",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0xd6da4992c15ecdc943b7b3dcb3317e2fda2f3d5f91cb83c60d52387244700d37",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -1256,10 +1284,12 @@
                         },
                         "context": {
                             "anchor": "0x34a22cea0093084e8345b5c20ca50a884cef828da88b156270cd49c02d686ba4",
+                            "anchor_slot": 0,
                             "state_root": "0x59f3f971f51d8c7138f9f4b43f966c0326669a8693a3589ccfe111879c48e4ff",
                             "beefy_root": "0x19461ad5a2c3824e96ea9d7d52ea1c18c84d4736311eb049940595f053cc048f",
                             "lookup_anchor": "0x201504d143737dd336a718938809d97a26f1b5d325d0be90e1f5525a599e7935",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x84dcca6a0dd9ca140fe3a69fe531b83bd95985edb008d2db092a5a8dbe113bb1",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -1303,10 +1333,12 @@
                         },
                         "context": {
                             "anchor": "0x831ab3983b0854a09ed6f02a72d5c35cfb23c8ed12a96a78d96bcd5192ca8787",
+                            "anchor_slot": 0,
                             "state_root": "0xb27ee7a944b8827c2774a0b0c55f5b175ee7d1e5d01ea5dd964567903adee473",
                             "beefy_root": "0x12bc9d78a0d6f16116bede9be14e8786dcadbe264ede5c2fc6483a5035122cda",
                             "lookup_anchor": "0xdbb0c420d6d724ac81881ea8fe197b6e94f445a2f9b87b4da1a41bf7d1d000e6",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x41eb9970e94cdaf0d52aebfc865a87babbe4afe77735bbb699d963272c685929",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -2379,10 +2411,12 @@
                         },
                         "context": {
                             "anchor": "0x16cb674febfdfa48b7d52b7ffad5e80611be837ca8e5df9aff162df5a9d08ae1",
+                            "anchor_slot": 0,
                             "state_root": "0x44862ced1f4617b2661f6ad6e5401c8534f0ba2e8b183d487f11f2925f37ec88",
                             "beefy_root": "0x036129985e01a4a2d5bf15d812e0648a3f281eb7c0c9b0e4be06cdbf9c07d824",
                             "lookup_anchor": "0x3bfe97e04da45752d818f3fbc59059e49b6106bdd723067ab4b7a41e6219007f",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x6e413e0213b50833774ae1ba2980d70cd32f4a2ed4d2940e951fc1b448dac3dd",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -2426,10 +2460,12 @@
                         },
                         "context": {
                             "anchor": "0x33926f279dad41c596e17ea3e5973c23e15c2030f95825a50d8ec2a41f0bcbae",
+                            "anchor_slot": 0,
                             "state_root": "0xbf45720986a0e0f9455972d951ccada04ea496fc2dfac0da9a4da4b5c8a0cde2",
                             "beefy_root": "0xbdb9486a4e898fd94a22801c2644a1c0ff38e391c20059f50506de3c9f24ccde",
                             "lookup_anchor": "0xf22a637ce7f290182f6616c5406179b4e6009018aec70a4e38670d42809a39c4",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x64328570c94f6f16338b624107809f6b5fb52ecdc94f9f0b85da65c6c8fdf689",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -2473,10 +2509,12 @@
                         },
                         "context": {
                             "anchor": "0x8435e4327dce719d22f4e4c22bed58e5046a795e5e1f8f3f7adbb4e01da738f7",
+                            "anchor_slot": 0,
                             "state_root": "0xb1469085e338699037dc8b65dfbcb396e8fdb1c5a76e3e66648768719b0a9543",
                             "beefy_root": "0x963974051f20a5e61590da566bc54261507ec55fcd86d7c0bfe3f2358526caf4",
                             "lookup_anchor": "0xddcd772fbba54834babdde66e3cbee23ec013be36316dd452b3e55aec30c1269",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x4dd72d0f2634a0cb246f8a3703be8cc1d6d05aa84e4cdaa93a747c22ab559ad2",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -2520,10 +2558,12 @@
                         },
                         "context": {
                             "anchor": "0xa4750f1bd13c3b2827c80d079cd80bf2d0f6933467062c80e7ccb74ef58b58f9",
+                            "anchor_slot": 0,
                             "state_root": "0xd5fab3b772854130b7eb90d43d551d6e2b4a938620aa4bcec9a3eb4804311927",
                             "beefy_root": "0x1291457aedb3f0dfb068dcdf4a8a59ec1459931cade168f5971e20198695c1f4",
                             "lookup_anchor": "0xd3b6f4209798b7619990964914908e9c933365281e236152d2902df89fd3b1e8",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x186a7f4ebfc7e334c73f05f715419192fa805acfb9967d233b86410bc713e74e",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -2567,10 +2607,12 @@
                         },
                         "context": {
                             "anchor": "0x56d9153b82e6d4ed4d5622dbc39cbbcddb5ccca1c6ffc07649acf89c14e61664",
+                            "anchor_slot": 0,
                             "state_root": "0x939f0d1b9b447e342a8521893921e11f61bec162c3d4301ec85f9a00dfc4125a",
                             "beefy_root": "0x1cd19794124afcbb9a20800b28326eaa463401f75dab37db041f9000e460a22d",
                             "lookup_anchor": "0xbab5dcbbeef9f56d05ff14d62bba2988b77e1ba8d71953ee72d77891b755d76c",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x8a210af7e4357382e4f44537cba8ff52d6738b20fa9b60f30ef38c85f951f4d9",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -2614,10 +2656,12 @@
                         },
                         "context": {
                             "anchor": "0xc56b6e120e0b45f3e67d79ec1214c30954e7de32538aa179606b515ef5d4eaa3",
+                            "anchor_slot": 0,
                             "state_root": "0xee58eed4bf627413f37342d153611b171e548e61dea9ab09b935c42f368c292e",
                             "beefy_root": "0x10df3b0a96d7dfe4a6ab83216cb60f610c2e77a428c52e14403d4f941947f9a6",
                             "lookup_anchor": "0x1cddc2a6a3e3b179ef9b8652a5904bcbcfbaa52f4fb71790b72677e48b807d83",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0xa9f94e36a4e34085be5d88853e6e6684f99e8d8d18a8d1645da552ee32ace03d",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -3246,10 +3290,12 @@
                         },
                         "context": {
                             "anchor": "0x27d710711a856709a10a48e45cb5def269f26d7168cb7b65e4b5b008ea15c665",
+                            "anchor_slot": 0,
                             "state_root": "0x12af96f715d08a72e5867203a4c17572ed625c912fe6a63ee8b35c81e03e401e",
                             "beefy_root": "0xe15fcd08e722279100e848e75976b0b388fbd24a7782fe46b7b803fe192514eb",
                             "lookup_anchor": "0x58ee421d1562b5e0385ba6f0e38e9ad6da1c128f8533ad6e46006ba0fc44e346",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x2cfc90e9390d0162d3844dd64feacef2e580802f930759eced6edc3e5aa1e369",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -3293,10 +3339,12 @@
                         },
                         "context": {
                             "anchor": "0xc69d50eb2b0ea3170f99e3675481443ce9b393a50d76be01d82c2f594e4c4e20",
+                            "anchor_slot": 0,
                             "state_root": "0x3eabdbc51fd919586314b1dadcff2b3a57e7b748d73738a4ce9633a05e86c8c4",
                             "beefy_root": "0x0d006c8fbfe505fc5c5149131012ceed452183139349910aac19bf1505cac828",
                             "lookup_anchor": "0x06e2d3b0d2fb9aaaf462408d2d0a5c02f5b80b4857842a8f67ad3721e426a658",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x4d5fa54cc0d3c43f9ac811e0aced49f6d6b4a778fd922f41ffae45a343fb7768",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -3340,10 +3388,12 @@
                         },
                         "context": {
                             "anchor": "0x0ad9a3b13afc323586cedaeeed0d02ba42a163165af9e4c9b9094f58803bc728",
+                            "anchor_slot": 0,
                             "state_root": "0x947a3787d0dfc6beeee8114251645ccea7768613171cefe27d3c2ee641b23f7f",
                             "beefy_root": "0xa4dbad917c3104bcdd20d5a12d52124f749fc27664ad735db2866f033fdf3738",
                             "lookup_anchor": "0x843e73f20d72618aca05f2fa7cb42859412c82fcf2461a888b7b0d6d9d4efa13",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0xb357bf5228d3caf946081564b5c456be8520f6f6869fe7cdc342df4e8eedaed3",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -3387,10 +3437,12 @@
                         },
                         "context": {
                             "anchor": "0x18fbbf9f25ccb9a07a42a91f32cc531d9c6a3b09bebdc73c57f9e24cbf8f3568",
+                            "anchor_slot": 0,
                             "state_root": "0xb2e7a5c3a4c8dd011549b0a2e718e8f910738b0a1a0923c6ea9f4d47c2a6fa89",
                             "beefy_root": "0x219e1c742d13a35ead46da28b2896b31aa9e9138b21166a091fa5a0b499f0497",
                             "lookup_anchor": "0x4bc0465b984f81667bb6ecfb4a971a7ad4dee758825c5ca43d4bf15c85e060db",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0xeb718693a286fcc812251370209ee6a0a2a06df40695c8cd4c811803e9c4dfcb",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -3434,10 +3486,12 @@
                         },
                         "context": {
                             "anchor": "0xec5c1f2750c212ce0a39f65f287477785ff9138fa9da18c956f23cd163144992",
+                            "anchor_slot": 0,
                             "state_root": "0x808fa3a2d99dd0f44c6f443ed0d41e1bfc292877871b151cf452e376e8e48dc6",
                             "beefy_root": "0x02092250f7b7666df86616b67159c6ec0cd87b06597169feeba5568eba215ce1",
                             "lookup_anchor": "0xa1f8a33d843bb57dbad22358b2cb2fd2fc2638b1af1350f1e0dda6848538a15f",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0xc138dea70092873985d7c94100b3fbe224580fc0bf5e9593cc667f8cdcb6b93a",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -3481,10 +3535,12 @@
                         },
                         "context": {
                             "anchor": "0x6bb472ab0029bc7074bdeab4adddb3884845570a41b1cf576db1c83d1501d9b0",
+                            "anchor_slot": 0,
                             "state_root": "0xfc0ad56643a25e43c885655edf3c644101744e6ff67e392099677c62ea463617",
                             "beefy_root": "0x65785020077b322f84555647debbb002a3252498114c39a88ef949eb5fc0b830",
                             "lookup_anchor": "0x127c9094d662d647b3f866003318da4c5d2198ea33883af9d7718c07ef459d50",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x72ac7e70b80f0ac9ca3deface9b444d542bc89ff9d2777e5e54754fd3287f463",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -3528,10 +3584,12 @@
                         },
                         "context": {
                             "anchor": "0x8bd8c0bb3a6f02ea8d6d913dac65dc905f39daf7511c38eee1f95b59c65b4e45",
+                            "anchor_slot": 0,
                             "state_root": "0x31d75ce34f861ad041d6cd6a05e4e595585989db4c83d1abad8d0826f9b926e2",
                             "beefy_root": "0x5004ba02b6126b8ca52c4693f111557b59d1f4777f0d9c7299fac35392b43331",
                             "lookup_anchor": "0xa173ac20d3bd1822170e50320d69fa4778ffadc79ae4b68b674c9b177f088c9d",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0xd6da4992c15ecdc943b7b3dcb3317e2fda2f3d5f91cb83c60d52387244700d37",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -3575,10 +3633,12 @@
                         },
                         "context": {
                             "anchor": "0x34a22cea0093084e8345b5c20ca50a884cef828da88b156270cd49c02d686ba4",
+                            "anchor_slot": 0,
                             "state_root": "0x59f3f971f51d8c7138f9f4b43f966c0326669a8693a3589ccfe111879c48e4ff",
                             "beefy_root": "0x19461ad5a2c3824e96ea9d7d52ea1c18c84d4736311eb049940595f053cc048f",
                             "lookup_anchor": "0x201504d143737dd336a718938809d97a26f1b5d325d0be90e1f5525a599e7935",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x84dcca6a0dd9ca140fe3a69fe531b83bd95985edb008d2db092a5a8dbe113bb1",
                             "prerequisites": []
                         },
                         "core_index": 0,
@@ -3622,10 +3682,12 @@
                         },
                         "context": {
                             "anchor": "0x831ab3983b0854a09ed6f02a72d5c35cfb23c8ed12a96a78d96bcd5192ca8787",
+                            "anchor_slot": 0,
                             "state_root": "0xb27ee7a944b8827c2774a0b0c55f5b175ee7d1e5d01ea5dd964567903adee473",
                             "beefy_root": "0x12bc9d78a0d6f16116bede9be14e8786dcadbe264ede5c2fc6483a5035122cda",
                             "lookup_anchor": "0xdbb0c420d6d724ac81881ea8fe197b6e94f445a2f9b87b4da1a41bf7d1d000e6",
                             "lookup_anchor_slot": 40,
+                            "lookup_anchor_state_root": "0x41eb9970e94cdaf0d52aebfc865a87babbe4afe77735bbb699d963272c685929",
                             "prerequisites": []
                         },
                         "core_index": 0,

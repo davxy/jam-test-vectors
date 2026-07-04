@@ -12,10 +12,12 @@
                 },
                 "context": {
                     "anchor": "0x64c0f6130975264300d1dcfeef9d1d0ce7cb673a8d8f0f83b83cebd9555f1c67",
+                    "anchor_slot": 0,
                     "state_root": "0x7cec854d3ac7106c88eca4219d6b60979127b63c655fa375641ecbb1f40cf57f",
                     "beefy_root": "0xd648354ae6de64938c42effd7aa7c74a31f39265361f68451b4bd9621e13342d",
                     "lookup_anchor": "0x04b87e6fb9d2c0aeec8919809cb7c7c9c68197ad161d8396b6fe5909ef73c011",
                     "lookup_anchor_slot": 1793,
+                    "lookup_anchor_state_root": "0x0403708d5bf8056b4c83e4b25f72ee35b3ae7e9989f3670562643c2396146c72",
                     "prerequisites": [
                         "0x17e5809e4d5e9daf50361fb6557a00814301159fc81a39cd4d2687e110e0b7be"
                     ]
@@ -54,10 +56,12 @@
                 },
                 "context": {
                     "anchor": "0x0bbf68da46ae4a4d7cf81ed14859752f28f9113c8394d9797e7ed119f4fe4971",
+                    "anchor_slot": 0,
                     "state_root": "0xcdb6c9ef39cfa38fd97eccbbb84f4d235a375f349e4f67d4cb2b19a5e54844d0",
                     "beefy_root": "0x2bb46e4f34a15b861eb311b5dfbc458b4c203630d483d7a50b7b2365d99cf5fd",
                     "lookup_anchor": "0x621153234ebdefd2fbc59ab7144d8e10ffc39ab2ba169a8572652d277c9a171b",
                     "lookup_anchor_slot": 1793,
+                    "lookup_anchor_state_root": "0x69655aec4dee1d1b4d3278fd96d5306e9175d884013b890180b2c964795c5ca1",
                     "prerequisites": [
                         "0x36a748779db31316ac26eebc08dadbeda8a8d4794892f6e340e32ab69e0d4d80"
                     ]
@@ -105,10 +109,12 @@
                         },
                         "context": {
                             "anchor": "0xc56b6e120e0b45f3e67d79ec1214c30954e7de32538aa179606b515ef5d4eaa3",
+                            "anchor_slot": 0,
                             "state_root": "0xee58eed4bf627413f37342d153611b171e548e61dea9ab09b935c42f368c292e",
                             "beefy_root": "0x10df3b0a96d7dfe4a6ab83216cb60f610c2e77a428c52e14403d4f941947f9a6",
                             "lookup_anchor": "0x1cddc2a6a3e3b179ef9b8652a5904bcbcfbaa52f4fb71790b72677e48b807d83",
                             "lookup_anchor_slot": 1793,
+                            "lookup_anchor_state_root": "0xa9f94e36a4e34085be5d88853e6e6684f99e8d8d18a8d1645da552ee32ace03d",
                             "prerequisites": [
                                 "0x38b7a75bd6d296f01fc6b4b6569c38980af6ba2ea34e22d429cccfb6f5b7432a"
                             ]
@@ -748,10 +754,12 @@
                         },
                         "context": {
                             "anchor": "0x16cb674febfdfa48b7d52b7ffad5e80611be837ca8e5df9aff162df5a9d08ae1",
+                            "anchor_slot": 0,
                             "state_root": "0x44862ced1f4617b2661f6ad6e5401c8534f0ba2e8b183d487f11f2925f37ec88",
                             "beefy_root": "0x036129985e01a4a2d5bf15d812e0648a3f281eb7c0c9b0e4be06cdbf9c07d824",
                             "lookup_anchor": "0x3bfe97e04da45752d818f3fbc59059e49b6106bdd723067ab4b7a41e6219007f",
                             "lookup_anchor_slot": 1793,
+                            "lookup_anchor_state_root": "0x6e413e0213b50833774ae1ba2980d70cd32f4a2ed4d2940e951fc1b448dac3dd",
                             "prerequisites": [
                                 "0xd54f425784ed0e9dfc311eb56a162711e68d0b21b5e87fb701b4f1c578a02651"
                             ]
@@ -797,10 +805,12 @@
                         },
                         "context": {
                             "anchor": "0x33926f279dad41c596e17ea3e5973c23e15c2030f95825a50d8ec2a41f0bcbae",
+                            "anchor_slot": 0,
                             "state_root": "0xbf45720986a0e0f9455972d951ccada04ea496fc2dfac0da9a4da4b5c8a0cde2",
                             "beefy_root": "0xbdb9486a4e898fd94a22801c2644a1c0ff38e391c20059f50506de3c9f24ccde",
                             "lookup_anchor": "0xf22a637ce7f290182f6616c5406179b4e6009018aec70a4e38670d42809a39c4",
                             "lookup_anchor_slot": 1793,
+                            "lookup_anchor_state_root": "0x64328570c94f6f16338b624107809f6b5fb52ecdc94f9f0b85da65c6c8fdf689",
                             "prerequisites": [
                                 "0x6af0ea4ced28a7b06f7156c3b0f9d725187efa1932f812abd17fe66cc1553a8f"
                             ]
@@ -846,10 +856,12 @@
                         },
                         "context": {
                             "anchor": "0x8435e4327dce719d22f4e4c22bed58e5046a795e5e1f8f3f7adbb4e01da738f7",
+                            "anchor_slot": 0,
                             "state_root": "0xb1469085e338699037dc8b65dfbcb396e8fdb1c5a76e3e66648768719b0a9543",
                             "beefy_root": "0x963974051f20a5e61590da566bc54261507ec55fcd86d7c0bfe3f2358526caf4",
                             "lookup_anchor": "0xddcd772fbba54834babdde66e3cbee23ec013be36316dd452b3e55aec30c1269",
                             "lookup_anchor_slot": 1793,
+                            "lookup_anchor_state_root": "0x4dd72d0f2634a0cb246f8a3703be8cc1d6d05aa84e4cdaa93a747c22ab559ad2",
                             "prerequisites": [
                                 "0xf5983aaa6fe1e7428902ace29d14be81a664a65f6dfca1138ccb99136547324e"
                             ]
@@ -895,10 +907,12 @@
                         },
                         "context": {
                             "anchor": "0x56d9153b82e6d4ed4d5622dbc39cbbcddb5ccca1c6ffc07649acf89c14e61664",
+                            "anchor_slot": 0,
                             "state_root": "0x939f0d1b9b447e342a8521893921e11f61bec162c3d4301ec85f9a00dfc4125a",
                             "beefy_root": "0x1cd19794124afcbb9a20800b28326eaa463401f75dab37db041f9000e460a22d",
                             "lookup_anchor": "0xbab5dcbbeef9f56d05ff14d62bba2988b77e1ba8d71953ee72d77891b755d76c",
                             "lookup_anchor_slot": 1793,
+                            "lookup_anchor_state_root": "0x8a210af7e4357382e4f44537cba8ff52d6738b20fa9b60f30ef38c85f951f4d9",
                             "prerequisites": [
                                 "0xa7a66c1635f45e0413cec365f60fb46fa0489c4d2df75f6fd9c00d1da3729222"
                             ]
@@ -942,10 +956,12 @@
                         },
                         "context": {
                             "anchor": "0xa4750f1bd13c3b2827c80d079cd80bf2d0f6933467062c80e7ccb74ef58b58f9",
+                            "anchor_slot": 0,
                             "state_root": "0xd5fab3b772854130b7eb90d43d551d6e2b4a938620aa4bcec9a3eb4804311927",
                             "beefy_root": "0x1291457aedb3f0dfb068dcdf4a8a59ec1459931cade168f5971e20198695c1f4",
                             "lookup_anchor": "0xd3b6f4209798b7619990964914908e9c933365281e236152d2902df89fd3b1e8",
                             "lookup_anchor_slot": 1793,
+                            "lookup_anchor_state_root": "0x186a7f4ebfc7e334c73f05f715419192fa805acfb9967d233b86410bc713e74e",
                             "prerequisites": [
                                 "0x18176cfbff4a8b40f2d9cba3c2ddc4a5b75e9152c8c41452cda90bebc0632013"
                             ]
@@ -2020,10 +2036,12 @@
                         },
                         "context": {
                             "anchor": "0xc56b6e120e0b45f3e67d79ec1214c30954e7de32538aa179606b515ef5d4eaa3",
+                            "anchor_slot": 0,
                             "state_root": "0xee58eed4bf627413f37342d153611b171e548e61dea9ab09b935c42f368c292e",
                             "beefy_root": "0x10df3b0a96d7dfe4a6ab83216cb60f610c2e77a428c52e14403d4f941947f9a6",
                             "lookup_anchor": "0x1cddc2a6a3e3b179ef9b8652a5904bcbcfbaa52f4fb71790b72677e48b807d83",
                             "lookup_anchor_slot": 1793,
+                            "lookup_anchor_state_root": "0xa9f94e36a4e34085be5d88853e6e6684f99e8d8d18a8d1645da552ee32ace03d",
                             "prerequisites": [
                                 "0x38b7a75bd6d296f01fc6b4b6569c38980af6ba2ea34e22d429cccfb6f5b7432a"
                             ]
@@ -2367,10 +2385,12 @@
                         },
                         "context": {
                             "anchor": "0x64c0f6130975264300d1dcfeef9d1d0ce7cb673a8d8f0f83b83cebd9555f1c67",
+                            "anchor_slot": 0,
                             "state_root": "0x7cec854d3ac7106c88eca4219d6b60979127b63c655fa375641ecbb1f40cf57f",
                             "beefy_root": "0xd648354ae6de64938c42effd7aa7c74a31f39265361f68451b4bd9621e13342d",
                             "lookup_anchor": "0x04b87e6fb9d2c0aeec8919809cb7c7c9c68197ad161d8396b6fe5909ef73c011",
                             "lookup_anchor_slot": 1793,
+                            "lookup_anchor_state_root": "0x0403708d5bf8056b4c83e4b25f72ee35b3ae7e9989f3670562643c2396146c72",
                             "prerequisites": [
                                 "0x17e5809e4d5e9daf50361fb6557a00814301159fc81a39cd4d2687e110e0b7be"
                             ]
@@ -2414,10 +2434,12 @@
                         },
                         "context": {
                             "anchor": "0x0bbf68da46ae4a4d7cf81ed14859752f28f9113c8394d9797e7ed119f4fe4971",
+                            "anchor_slot": 0,
                             "state_root": "0xcdb6c9ef39cfa38fd97eccbbb84f4d235a375f349e4f67d4cb2b19a5e54844d0",
                             "beefy_root": "0x2bb46e4f34a15b861eb311b5dfbc458b4c203630d483d7a50b7b2365d99cf5fd",
                             "lookup_anchor": "0x621153234ebdefd2fbc59ab7144d8e10ffc39ab2ba169a8572652d277c9a171b",
                             "lookup_anchor_slot": 1793,
+                            "lookup_anchor_state_root": "0x69655aec4dee1d1b4d3278fd96d5306e9175d884013b890180b2c964795c5ca1",
                             "prerequisites": [
                                 "0x36a748779db31316ac26eebc08dadbeda8a8d4794892f6e340e32ab69e0d4d80"
                             ]
@@ -2758,10 +2780,12 @@
                         },
                         "context": {
                             "anchor": "0x16cb674febfdfa48b7d52b7ffad5e80611be837ca8e5df9aff162df5a9d08ae1",
+                            "anchor_slot": 0,
                             "state_root": "0x44862ced1f4617b2661f6ad6e5401c8534f0ba2e8b183d487f11f2925f37ec88",
                             "beefy_root": "0x036129985e01a4a2d5bf15d812e0648a3f281eb7c0c9b0e4be06cdbf9c07d824",
                             "lookup_anchor": "0x3bfe97e04da45752d818f3fbc59059e49b6106bdd723067ab4b7a41e6219007f",
                             "lookup_anchor_slot": 1793,
+                            "lookup_anchor_state_root": "0x6e413e0213b50833774ae1ba2980d70cd32f4a2ed4d2940e951fc1b448dac3dd",
                             "prerequisites": [
                                 "0xd54f425784ed0e9dfc311eb56a162711e68d0b21b5e87fb701b4f1c578a02651"
                             ]
@@ -2807,10 +2831,12 @@
                         },
                         "context": {
                             "anchor": "0x33926f279dad41c596e17ea3e5973c23e15c2030f95825a50d8ec2a41f0bcbae",
+                            "anchor_slot": 0,
                             "state_root": "0xbf45720986a0e0f9455972d951ccada04ea496fc2dfac0da9a4da4b5c8a0cde2",
                             "beefy_root": "0xbdb9486a4e898fd94a22801c2644a1c0ff38e391c20059f50506de3c9f24ccde",
                             "lookup_anchor": "0xf22a637ce7f290182f6616c5406179b4e6009018aec70a4e38670d42809a39c4",
                             "lookup_anchor_slot": 1793,
+                            "lookup_anchor_state_root": "0x64328570c94f6f16338b624107809f6b5fb52ecdc94f9f0b85da65c6c8fdf689",
                             "prerequisites": [
                                 "0x6af0ea4ced28a7b06f7156c3b0f9d725187efa1932f812abd17fe66cc1553a8f"
                             ]
@@ -2856,10 +2882,12 @@
                         },
                         "context": {
                             "anchor": "0x8435e4327dce719d22f4e4c22bed58e5046a795e5e1f8f3f7adbb4e01da738f7",
+                            "anchor_slot": 0,
                             "state_root": "0xb1469085e338699037dc8b65dfbcb396e8fdb1c5a76e3e66648768719b0a9543",
                             "beefy_root": "0x963974051f20a5e61590da566bc54261507ec55fcd86d7c0bfe3f2358526caf4",
                             "lookup_anchor": "0xddcd772fbba54834babdde66e3cbee23ec013be36316dd452b3e55aec30c1269",
                             "lookup_anchor_slot": 1793,
+                            "lookup_anchor_state_root": "0x4dd72d0f2634a0cb246f8a3703be8cc1d6d05aa84e4cdaa93a747c22ab559ad2",
                             "prerequisites": [
                                 "0xf5983aaa6fe1e7428902ace29d14be81a664a65f6dfca1138ccb99136547324e"
                             ]
@@ -2905,10 +2933,12 @@
                         },
                         "context": {
                             "anchor": "0x56d9153b82e6d4ed4d5622dbc39cbbcddb5ccca1c6ffc07649acf89c14e61664",
+                            "anchor_slot": 0,
                             "state_root": "0x939f0d1b9b447e342a8521893921e11f61bec162c3d4301ec85f9a00dfc4125a",
                             "beefy_root": "0x1cd19794124afcbb9a20800b28326eaa463401f75dab37db041f9000e460a22d",
                             "lookup_anchor": "0xbab5dcbbeef9f56d05ff14d62bba2988b77e1ba8d71953ee72d77891b755d76c",
                             "lookup_anchor_slot": 1793,
+                            "lookup_anchor_state_root": "0x8a210af7e4357382e4f44537cba8ff52d6738b20fa9b60f30ef38c85f951f4d9",
                             "prerequisites": [
                                 "0xa7a66c1635f45e0413cec365f60fb46fa0489c4d2df75f6fd9c00d1da3729222"
                             ]
@@ -2952,10 +2982,12 @@
                         },
                         "context": {
                             "anchor": "0xa4750f1bd13c3b2827c80d079cd80bf2d0f6933467062c80e7ccb74ef58b58f9",
+                            "anchor_slot": 0,
                             "state_root": "0xd5fab3b772854130b7eb90d43d551d6e2b4a938620aa4bcec9a3eb4804311927",
                             "beefy_root": "0x1291457aedb3f0dfb068dcdf4a8a59ec1459931cade168f5971e20198695c1f4",
                             "lookup_anchor": "0xd3b6f4209798b7619990964914908e9c933365281e236152d2902df89fd3b1e8",
                             "lookup_anchor_slot": 1793,
+                            "lookup_anchor_state_root": "0x186a7f4ebfc7e334c73f05f715419192fa805acfb9967d233b86410bc713e74e",
                             "prerequisites": [
                                 "0x18176cfbff4a8b40f2d9cba3c2ddc4a5b75e9152c8c41452cda90bebc0632013"
                             ]
