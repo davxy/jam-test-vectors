@@ -195,6 +195,8 @@ AvailabilityAssignments ::= SEQUENCE (SIZE(core-count)) OF AvailabilityAssignmen
 RefineContext ::= SEQUENCE {
     -- Anchor block hash
     anchor HeaderHash,
+    -- Time slot of the anchor block
+    anchor-slot TimeSlot,
     -- State root at the anchor
     state-root StateRoot,
     -- BEEFY consensus root
@@ -203,6 +205,8 @@ RefineContext ::= SEQUENCE {
     lookup-anchor HeaderHash,
     -- Time slot of the lookup anchor
     lookup-anchor-slot TimeSlot,
+    -- Posterior state root of the lookup anchor block
+    lookup-anchor-state-root StateRoot,
     -- Hashes of prerequisite work packages
     prerequisites SEQUENCE OF OpaqueHash
 }
@@ -428,6 +432,8 @@ BlockInfo ::= SEQUENCE {
     beefy-root     OpaqueHash,
     -- Posterior state root
     state-root     StateRoot,
+    -- Time slot of this block
+    slot           TimeSlot,
     -- Work packages reported in this block
     reported       SEQUENCE OF ReportedWorkPackage
 }
@@ -512,6 +518,8 @@ ServiceActivityRecord ::= SEQUENCE {
     exports               U32,
     -- Number of work-items accumulated
     accumulate-count      U32,
+    -- Number of transfers processed during accumulation
+    accumulate-transfer-count U32,
     -- Amount of gas used for accumulation
     accumulate-gas-used   Gas
 }
