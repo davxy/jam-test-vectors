@@ -24,8 +24,10 @@ is available within the `accounts` map.
 A subset of service activity statistics ($π_S$) updated by the STF subsystem used
 to process these test vectors.
 
-In particular the `accumulate-count` (a.0), `accumulate-gas-used` (a.1),
-`on-transfers-count` (t.0) and `on-transfers-gas-used` (t.1).
+In particular the `accumulate-count` (a.0), `accumulate-transfer-count` (a.1)
+and `accumulate-gas-used` (a.2). These mirror the `⟨N(s), T(s), G(s)⟩` accumulation
+statistics tuple, where `T(s)` counts the deferred transfers delivered to service
+`s` during accumulation.
 
 ## Gas Costs
 
@@ -103,6 +105,9 @@ All host calls have a gas cost of **$10$**, with the following exceptions:
   - One report unlocks reports in the ready-queue.
 - [transfer_for_ejected_service-1](./tiny/transfer_for_ejected_service-1.json)
 	- A transfer is made to a service that gets ejected in the same round.
+- [transfer_for_live_service-1](./tiny/transfer_for_live_service-1.json)
+	- A transfer is made to a live service.
+	- The deferred transfer is delivered to its accumulate in the following round.
 - [work_for_ejected_service-1](./tiny/work_for_ejected_service-1.json)
   - A work report X with with unsatisfied dependency Y is queued.
 - [work_for_ejected_service-2](./tiny/work_for_ejected_service-2.json)
