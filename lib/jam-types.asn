@@ -166,12 +166,13 @@ ServiceInfo ::= SEQUENCE {
 -- availability status.
 --------------------------------------------------------------------------------
 
--- Assignment of a work report with timeout
+-- Assignment of a work report with registration slot
 AvailabilityAssignment ::= SEQUENCE {
-    -- The work report being assigned
-    report WorkReport,
-    -- Timeout value for this assignment
-    timeout U32
+    -- Full guarantee for the report (report, slot, signatures)
+    guarantee ReportGuarantee,
+    -- Slot at which the guarantee was registered on-chain.
+    -- Unlike `guarantee.slot`, this is the reference point for the availability timeout.
+    registered-slot TimeSlot
 }
 
 -- Optional availability assignment (Some/None pattern)
