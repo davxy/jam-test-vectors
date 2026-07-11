@@ -1773,7 +1773,7 @@
                     "exports": 0,
                     "accumulate_count": 1,
                     "accumulate_transfer_count": 0,
-                    "accumulate_gas_used": 25326
+                    "accumulate_gas_used": 30142
                 }
             }
         ],
@@ -3451,7 +3451,7 @@
                     "exports": 0,
                     "accumulate_count": 3,
                     "accumulate_transfer_count": 0,
-                    "accumulate_gas_used": 41680
+                    "accumulate_gas_used": 51506
                 }
             }
         ],
