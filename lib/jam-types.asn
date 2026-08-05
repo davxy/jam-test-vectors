@@ -360,6 +360,8 @@ WorkPackageSpec ::= SEQUENCE {
     length U32,
     -- Root hash of erasure-coded data
     erasure-root ErasureRoot,
+    -- Total number of erasure-coded chunks, one per assuring validator
+    erasure-shards ValidatorIndex,
     -- Root hash of exported data
     exports-root ExportsRoot,
     -- Number of exports
