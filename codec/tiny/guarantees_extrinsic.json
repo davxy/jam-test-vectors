@@ -5,6 +5,7 @@
                 "hash": "0x30466e0ae1b05dde5249872475f6beeac368fd014b5a3413ceb32d3872143284",
                 "length": 42,
                 "erasure_root": "0x7af11fdaa717c398e223211842b41392f18df4bbc4ea0f4cfb972f19c7a64949",
+                "erasure_shards": 6,
                 "exports_root": "0xe8e52949f6e4fb1d943248df48c3f2b538200fddfea22388e5e061be8ebf21a7",
                 "exports_count": 69
             },
