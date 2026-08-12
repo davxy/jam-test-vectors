@@ -22686,7 +22686,7 @@
                 "pre_images": 0,
                 "pre_images_size": 0,
                 "guarantees": 1,
-                "assurances": 1
+                "assurances": 0
             },
             {
                 "blocks": 1,
@@ -22694,7 +22694,7 @@
                 "pre_images": 3,
                 "pre_images_size": 51,
                 "guarantees": 1,
-                "assurances": 1
+                "assurances": 0
             },
             {
                 "blocks": 0,
@@ -30872,7 +30872,7 @@
                 "pre_images": 21,
                 "pre_images_size": 625,
                 "guarantees": 1069,
-                "assurances": 1329
+                "assurances": 1330
             },
             {
                 "blocks": 74,
@@ -30880,7 +30880,7 @@
                 "pre_images": 73,
                 "pre_images_size": 149,
                 "guarantees": 1689,
-                "assurances": 1213
+                "assurances": 1214
             },
             {
                 "blocks": 111,
