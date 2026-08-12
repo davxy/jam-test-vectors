@@ -122,7 +122,7 @@ ValidatorData ::= SEQUENCE {
 }
 
 -- Complete set of validator data for all validators
-ValidatorsData ::= SEQUENCE (SIZE(validators-count)) OF ValidatorData
+ValidatorsData ::= SEQUENCE (SIZE(0..validators-count)) OF ValidatorData
 
 --------------------------------------------------------------------------------
 -- Service Types
@@ -475,7 +475,7 @@ ValidatorActivityRecord ::= SEQUENCE {
 }
 
 -- Statistics for all validators
-ValidatorsStatistics ::= SEQUENCE (SIZE(validators-count)) OF ValidatorActivityRecord
+ValidatorsStatistics ::= SEQUENCE (SIZE(0..validators-count)) OF ValidatorActivityRecord
 
 -- Record of a per-block core's activity
 CoreActivityRecord ::= SEQUENCE {
@@ -799,7 +799,7 @@ EpochMark ::= SEQUENCE {
     -- Entropy used to build the epoch's tickets
     tickets-entropy Entropy,
     -- Public keys of validators
-    validators SEQUENCE (SIZE(validators-count)) OF EpochMarkValidatorKeys
+    validators SEQUENCE (SIZE(0..validators-count)) OF EpochMarkValidatorKeys
 }
 
 -- Mark containing the next epoch tickets
