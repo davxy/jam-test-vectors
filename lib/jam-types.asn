@@ -616,7 +616,7 @@ Verdict ::= SEQUENCE {
     -- used to sign the votes
     age U32,
     -- Judgments from a super-majority of validators
-    votes SEQUENCE (SIZE(validators-super-majority)) OF Judgement
+    votes SEQUENCE (SIZE(0..validators-super-majority)) OF Judgement
 }
 
 -- Information about a validator who submitted an invalid report
