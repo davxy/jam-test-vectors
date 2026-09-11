@@ -30,6 +30,28 @@
   than full `(requester, blob)` entries.
   (GP [#524](https://github.com/gavofyork/graypaper/pull/524))
 * Block import traces: all suites regenerated for 0.8.0.
+* Assurances vectors: the state carries `post-validators` (κ') after
+  `curr-validators` (κ), so that the clearing of pending reports on a
+  validator set size change can be exercised. New vector
+  `val_set_size_change_clears_pending_reports`.
+  (GP [#514](https://github.com/gavofyork/graypaper/pull/514))
+* New vectors for the 0.8.0 rules: disputes
+  `progress_with_bad_verdict_without_culprits` (GP
+  [#525](https://github.com/gavofyork/graypaper/pull/525)),
+  `progress_with_bad_votes_count` (new error code `bad-votes-count`) and, full only,
+  `progress_with_verdicts_from_resized_previous_set`; accumulate
+  `bless_from_non_manager` (GP
+  [#519](https://github.com/gavofyork/graypaper/pull/519)),
+  `designate_with_invalid_count` and `preimage_len_bound` (GP
+  [#520](https://github.com/gavofyork/graypaper/pull/520)); full only,
+  reports `report_with_shrunken_val_set` and safrole
+  `enact-epoch-change-with-set-resize`.
+  (GP [#514](https://github.com/gavofyork/graypaper/pull/514))
+* New accumulate vectors for host calls without one: `always_accumulate`,
+  `assign_from_non_assigner`, `upgrade_service`, `lookup_foreign_preimage`,
+  `provide_preimage` and `create_service`.
+  (GP [#500](https://github.com/gavofyork/graypaper/pull/500),
+  [#517](https://github.com/gavofyork/graypaper/pull/517))
 
 ### Fixes
 
