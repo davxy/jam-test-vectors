@@ -112,4 +112,16 @@ imports (i), exports (x), extrinsic_size (z), extrinsic_count (x).
 
 ## Full Vectors
 
-Currently, the same test cases as tiny vectors but at a larger scale.
+The same test cases as tiny vectors but at a larger scale, plus the following.
+
+- [inactive_core_index-1](./full/inactive_core_index-1.json) 🔴
+  - Active validators set shrunk to the minimum size at the epoch boundary.
+  - Guarantee under the previous rotation, routed to the previous set which still has the full size.
+  - The report core index is beyond the cores active under the shrunk set.
+- [inactive_core_index-2](./full/inactive_core_index-2.json) 🟢
+  - Same routing, report for an active core with the erasure shards count of the shrunk set.
+- [report_with_shrunken_val_set-1](./full/report_with_shrunken_val_set-1.json) 🔴
+  - Active validators set shrunk to the minimum size.
+  - Guarantors assigned under the full size permutation.
+- [report_with_shrunken_val_set-2](./full/report_with_shrunken_val_set-2.json) 🟢
+  - Guarantors assigned under the permutation of the shrunk set.
