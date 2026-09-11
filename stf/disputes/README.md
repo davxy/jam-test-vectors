@@ -66,7 +66,19 @@ tests that verify the invalidation of assignments following a verdict.
   - Use previous epoch validators set for verdict signatures verification
 - [progress_with_verdict_signatures_from_previous_set-2](tiny/progress_with_verdict_signatures_from_previous_set-2.json) 🔴
   - Age too old for verdicts judgements
+- [progress_with_bad_verdict_without_culprits-1](tiny/progress_with_bad_verdict_without_culprits-1.json) 🟢
+  - Bad verdict without culprits. Culprits are not required (GP 0.8.0).
+- [progress_with_bad_verdict_without_culprits-2](tiny/progress_with_bad_verdict_without_culprits-2.json) 🟢
+  - Bad verdict with a single culprit.
+- [progress_with_bad_votes_count-1](tiny/progress_with_bad_votes_count-1.json) 🔴
+  - Verdict with one vote less than the supermajority of the signing validators set.
 
 ## Full Vectors
 
-Currently, the same test cases as tiny vectors but at a larger scale.
+The same test cases as tiny vectors but at a larger scale, plus the following.
+
+- [progress_with_verdicts_from_resized_previous_set-1](full/progress_with_verdicts_from_resized_previous_set-1.json) 🟢
+  - Previous epoch validators set is smaller than the current one.
+  - Verdict signed by the previous set carries the supermajority of the previous set size.
+- [progress_with_verdicts_from_resized_previous_set-2](full/progress_with_verdicts_from_resized_previous_set-2.json) 🔴
+  - Same votes count signed by the current set, which is not its supermajority.

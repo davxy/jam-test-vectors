@@ -58,5 +58,6 @@ class DisputesTestVector(StfTestVector):
         11: "bad_validator_index",
         12: "bad_signature",
         13: "bad_guarantor_key",
-        14: "bad_auditor_key"
+        14: "bad_auditor_key",
+        15: "bad_votes_count",
     }
