@@ -115,6 +115,43 @@ All host calls have a gas cost of **$10$**, with the following exceptions:
 - [work_for_ejected_service-3](./tiny/work_for_ejected_service-3.json)
   - Work report Y is executed and unlocks work report X.
   - Work report X is not actually executed because account can't be loaded.
+- [bless_from_non_manager-1](./tiny/bless_from_non_manager-1.json)
+  - `bless` host call from a service which is not the manager. Privileges are not changed.
+- [bless_from_non_manager-2](./tiny/bless_from_non_manager-2.json)
+  - `bless` host call from the manager service. Privileges are changed.
+- [designate_with_invalid_count-1](./tiny/designate_with_invalid_count-1.json)
+  - `designate` host call with one key less than the minimum validators set size.
+- [designate_with_invalid_count-2](./tiny/designate_with_invalid_count-2.json)
+  - `designate` host call with the minimum validators set size.
+- [preimage_len_bound-1](./tiny/preimage_len_bound-1.json)
+  - `solicit` host call with a preimage length of 2^32. Rejected.
+- [preimage_len_bound-2](./tiny/preimage_len_bound-2.json)
+  - `solicit` host call with a preimage length of 2^32-1. Accepted.
+- [preimage_len_bound-3](./tiny/preimage_len_bound-3.json)
+  - `forget` host call for the unprovided preimage of length 2^32-1. Dropped.
+- [always_accumulate-1](./tiny/always_accumulate-1.json)
+  - Service in the always-accumulate set, no reports. Accumulates zero items within its free gas.
+- [always_accumulate-2](./tiny/always_accumulate-2.json)
+  - Same service with one report. The item and the free gas are accumulated together.
+- [assign_from_non_assigner-1](./tiny/assign_from_non_assigner-1.json)
+  - `assign` host call from a service which is not the assigner of the core. Rejected.
+- [assign_from_non_assigner-2](./tiny/assign_from_non_assigner-2.json)
+  - `assign` host call for a core index out of range. Rejected.
+- [assign_from_non_assigner-3](./tiny/assign_from_non_assigner-3.json)
+  - `assign` host call from the assigner, which hands the core over to another service.
+- [upgrade_service-1](./tiny/upgrade_service-1.json)
+  - `upgrade` host call. Code hash and minimum gas requirements are replaced.
+- [lookup_foreign_preimage-1](./tiny/lookup_foreign_preimage-1.json)
+  - `lookup` host call for an unknown preimage. Nothing is returned.
+- [lookup_foreign_preimage-2](./tiny/lookup_foreign_preimage-2.json)
+  - `lookup` host call for a preimage held by another service.
+- [provide_preimage-1](./tiny/provide_preimage-1.json)
+  - `provide` host call for a service which did not request the preimage. Rejected.
+- [provide_preimage-2](./tiny/provide_preimage-2.json)
+  - `provide` host call for a requested preimage. The preimage becomes available.
+- [create_service-1](./tiny/create_service-1.json)
+  - `new` host call from the registrar with a requested id. The endowment is delivered as a
+    deferred transfer to the new service, whose code is not available.
 
 ## Full Vectors
 
