@@ -316,10 +316,12 @@ WorkExecResult ::= CHOICE {
     panic [2] NULL,
     -- Invalid exports
     bad-exports [3] NULL,
+    -- Output size exceeds limits
+    output-oversize [4] NULL,
     -- Invalid code
-    bad-code [4] NULL,
+    bad-code [5] NULL,
     -- Code size exceeds limits
-    code-oversize [5] NULL
+    code-oversize [6] NULL
 }
 
 -- Resource usage during refinement
