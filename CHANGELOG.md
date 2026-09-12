@@ -40,8 +40,6 @@
   [#525](https://github.com/gavofyork/graypaper/pull/525)),
   `progress_with_bad_votes_count` (new error code `bad-votes-count`) and, full only,
   `progress_with_verdicts_from_resized_previous_set`; accumulate
-  `bless_from_non_manager` (GP
-  [#519](https://github.com/gavofyork/graypaper/pull/519)),
   `designate_with_invalid_count` and `preimage_len_bound` (GP
   [#520](https://github.com/gavofyork/graypaper/pull/520)); full only,
   reports `report_with_shrunken_val_set` and safrole
@@ -67,6 +65,12 @@
 * `grow_heap` address-space limit rounds the stack reservation up to the
   64 KiB zone size, as per GP
   [#538](https://github.com/gavofyork/graypaper/pull/538).
+* The `bless` host call does not refuse a non-manager caller, so no vector
+  exercises the `HUH` of GP
+  [#519](https://github.com/gavofyork/graypaper/pull/519). The upcoming GP
+  [#558](https://github.com/gavofyork/graypaper/pull/558) allows non-manager
+  privilege holders to hand over their role via `bless`; both changes will
+  be applied together.
 
 ## [0.7.2] - 01-12-2025
 
