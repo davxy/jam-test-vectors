@@ -122,7 +122,7 @@ ValidatorData ::= SEQUENCE {
 }
 
 -- Complete set of validator data for all validators
-ValidatorsData ::= SEQUENCE (SIZE(validators-count)) OF ValidatorData
+ValidatorsData ::= SEQUENCE (SIZE(0..validators-count)) OF ValidatorData
 
 --------------------------------------------------------------------------------
 -- Service Types
@@ -166,12 +166,13 @@ ServiceInfo ::= SEQUENCE {
 -- availability status.
 --------------------------------------------------------------------------------
 
--- Assignment of a work report with timeout
+-- Assignment of a work report with registration slot
 AvailabilityAssignment ::= SEQUENCE {
-    -- The work report being assigned
-    report WorkReport,
-    -- Timeout value for this assignment
-    timeout U32
+    -- Full guarantee for the report (report, slot, signatures)
+    guarantee ReportGuarantee,
+    -- Slot at which the guarantee was registered on-chain.
+    -- Unlike `guarantee.slot`, this is the reference point for the availability timeout.
+    registered-slot TimeSlot
 }
 
 -- Optional availability assignment (Some/None pattern)
@@ -195,6 +196,8 @@ AvailabilityAssignments ::= SEQUENCE (SIZE(core-count)) OF AvailabilityAssignmen
 RefineContext ::= SEQUENCE {
     -- Anchor block hash
     anchor HeaderHash,
+    -- Time slot of the anchor block
+    anchor-slot TimeSlot,
     -- State root at the anchor
     state-root StateRoot,
     -- BEEFY consensus root
@@ -203,6 +206,8 @@ RefineContext ::= SEQUENCE {
     lookup-anchor HeaderHash,
     -- Time slot of the lookup anchor
     lookup-anchor-slot TimeSlot,
+    -- Posterior state root of the lookup anchor block
+    lookup-anchor-state-root StateRoot,
     -- Hashes of prerequisite work packages
     prerequisites SEQUENCE OF OpaqueHash
 }
@@ -311,10 +316,12 @@ WorkExecResult ::= CHOICE {
     panic [2] NULL,
     -- Invalid exports
     bad-exports [3] NULL,
+    -- Output size exceeds limits
+    output-oversize [4] NULL,
     -- Invalid code
-    bad-code [4] NULL,
+    bad-code [5] NULL,
     -- Code size exceeds limits
-    code-oversize [5] NULL
+    code-oversize [6] NULL
 }
 
 -- Resource usage during refinement
@@ -355,6 +362,8 @@ WorkPackageSpec ::= SEQUENCE {
     length U32,
     -- Root hash of erasure-coded data
     erasure-root ErasureRoot,
+    -- Total number of erasure-coded chunks, one per assuring validator
+    erasure-shards ValidatorIndex,
     -- Root hash of exported data
     exports-root ExportsRoot,
     -- Number of exports
@@ -428,6 +437,8 @@ BlockInfo ::= SEQUENCE {
     beefy-root     OpaqueHash,
     -- Posterior state root
     state-root     StateRoot,
+    -- Time slot of this block
+    slot           TimeSlot,
     -- Work packages reported in this block
     reported       SEQUENCE OF ReportedWorkPackage
 }
@@ -466,7 +477,7 @@ ValidatorActivityRecord ::= SEQUENCE {
 }
 
 -- Statistics for all validators
-ValidatorsStatistics ::= SEQUENCE (SIZE(validators-count)) OF ValidatorActivityRecord
+ValidatorsStatistics ::= SEQUENCE (SIZE(0..validators-count)) OF ValidatorActivityRecord
 
 -- Record of a per-block core's activity
 CoreActivityRecord ::= SEQUENCE {
@@ -512,6 +523,8 @@ ServiceActivityRecord ::= SEQUENCE {
     exports               U32,
     -- Number of work-items accumulated
     accumulate-count      U32,
+    -- Number of transfers processed during accumulation
+    accumulate-transfer-count U32,
     -- Amount of gas used for accumulation
     accumulate-gas-used   Gas
 }
@@ -605,7 +618,7 @@ Verdict ::= SEQUENCE {
     -- used to sign the votes
     age U32,
     -- Judgments from a super-majority of validators
-    votes SEQUENCE (SIZE(validators-super-majority)) OF Judgement
+    votes SEQUENCE (SIZE(0..validators-super-majority)) OF Judgement
 }
 
 -- Information about a validator who submitted an invalid report
@@ -788,7 +801,7 @@ EpochMark ::= SEQUENCE {
     -- Entropy used to build the epoch's tickets
     tickets-entropy Entropy,
     -- Public keys of validators
-    validators SEQUENCE (SIZE(validators-count)) OF EpochMarkValidatorKeys
+    validators SEQUENCE (SIZE(0..validators-count)) OF EpochMarkValidatorKeys
 }
 
 -- Mark containing the next epoch tickets

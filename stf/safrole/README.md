@@ -110,4 +110,15 @@ Most of these differences aim to provide a clear and concise protocol specificat
 
 ## Full Vectors
 
-Currently, the same test cases as tiny vectors but at a larger scale.
+The same test cases as tiny vectors but at a larger scale, plus the following.
+
+- [enact-epoch-change-with-set-resize-1](./full/enact-epoch-change-with-set-resize-1.json) 🟢
+  - On epoch change the designated set is smaller than the active one.
+  - Epoch mark carries the smaller set.
+- [enact-epoch-change-with-set-resize-2](./full/enact-epoch-change-with-set-resize-2.json) 🟢
+  - Tickets with attempts allowed by the smaller pending set size, beyond the bound of the full size set.
+- [enact-epoch-change-with-set-resize-3](./full/enact-epoch-change-with-set-resize-3.json) 🔴
+  - Ticket with an attempt beyond the bound of the smaller pending set size.
+- [enact-epoch-change-with-set-resize-4](./full/enact-epoch-change-with-set-resize-4.json) 🟢
+  - Next epoch change. The smaller set becomes active.
+  - Tickets accumulator is not full, the sealing keys fall back to a selection from the smaller set.

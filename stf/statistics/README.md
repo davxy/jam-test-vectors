@@ -24,16 +24,25 @@ Most of the content of the extrinsic is irrelevant and primarily consists of pla
 
 ## Tiny Vectors
 
-- [stats_with_empty_extrinsic-1](./tiny/stats_with_empty_extrinsic-1.json)
+- [stats_with_empty_extrinsic-1](./tiny/stats_with_empty_extrinsic-1.json) 🟢
   - Empty extrinsic with no epoch change.
   - Only author blocks counter is incremented.
-- [stats_with_epoch_change-1](./tiny/stats_with_epoch_change-1.json)
+- [stats_with_epoch_change-1](./tiny/stats_with_epoch_change-1.json) 🟢
   - Misc extrinsic information with no epoch change.
   - See "Extrinsic Semantic Validity" section.
-- [stats_with_some_extrinsic-1](./tiny/stats_with_some_extrinsic-1.json)
+- [stats_with_some_extrinsic-1](./tiny/stats_with_some_extrinsic-1.json) 🟢
   - Misc extrinsic information with no epoch change.
   - See "Extrinsic Semantic Validity" section.
+- [stats_epoch_change_with_set_resize-1](./tiny/stats_epoch_change_with_set_resize-1.json) 🟢
+  - Epoch change with an assurance from the last validator of the prior set.
+  - Assurances are credited to the outgoing accumulator, which becomes the last epoch snapshot.
+  - Under the tiny spec the set size is unchanged.
 
 ## Full Vectors
 
-Currently, the same test cases as tiny vectors but at a larger scale.
+The same test cases as tiny vectors but at a larger scale, with one difference.
+
+- [stats_epoch_change_with_set_resize-1](./full/stats_epoch_change_with_set_resize-1.json) 🟢
+  - The active validators set shrinks to the minimum size at the epoch change.
+  - The fresh accumulator is sized by the new set, the snapshot keeps the prior size.
+  - The assurer index is beyond the new set size and is credited in the snapshot.
