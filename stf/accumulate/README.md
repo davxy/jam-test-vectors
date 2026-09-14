@@ -139,6 +139,13 @@ storage, together with the gas it consumed.
   - `assign` host call for a core index out of range. Rejected.
 - [assign_from_non_assigner-3](./tiny/assign_from_non_assigner-3.json) 🟢
   - `assign` host call from the assigner, which hands the core over to another service.
+- [bless_from_non_manager-1](./tiny/bless_from_non_manager-1.json) 🟢
+  - `bless` host call from the designator, which is not the manager. Accepted, where
+    GP 0.8.0 answers `HUH` (see the CHANGELOG deviations). The designate role is handed
+    over to another service. The always-accumulate entry passed by the call is ignored.
+- [bless_from_non_manager-2](./tiny/bless_from_non_manager-2.json) 🟢
+  - The manager and the designator both change the designator in the same round.
+    The manager choice wins.
 - [upgrade_service-1](./tiny/upgrade_service-1.json) 🟢
   - `upgrade` host call. Code hash and minimum gas requirements are replaced.
 - [lookup_foreign_preimage-1](./tiny/lookup_foreign_preimage-1.json) 🟢

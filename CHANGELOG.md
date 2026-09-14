@@ -65,9 +65,11 @@
 * `grow_heap` address-space limit rounds the stack reservation up to the
   64 KiB zone size, as per GP
   [#538](https://github.com/gavofyork/graypaper/pull/538).
-* The `bless` host call does not refuse a non-manager caller, so no vector
-  exercises the `HUH` of GP
-  [#519](https://github.com/gavofyork/graypaper/pull/519). The upcoming GP
+* The `bless` host call does not refuse a non-manager caller (GP
+  [#519](https://github.com/gavofyork/graypaper/pull/519)). The accumulate
+  vectors `bless_from_non_manager` follow this deviation: the designator hands
+  its role over via `bless`, where GP 0.8.0 answers `HUH` and keeps the
+  designator. The upcoming GP
   [#558](https://github.com/gavofyork/graypaper/pull/558) allows non-manager
   privilege holders to hand over their role via `bless`; both changes will
   be applied together.
