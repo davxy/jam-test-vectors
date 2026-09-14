@@ -152,6 +152,16 @@ storage, together with the gas it consumed.
 - [create_service-1](./tiny/create_service-1.json) 🟢
   - `new` host call from the registrar with a requested id. The endowment is delivered as a
     deferred transfer to the new service, whose code is not available.
+- [same_code_different_services-1](./tiny/same_code_different_services-1.json) 🟢
+  - Two reports for two services which share the same code hash.
+  - The second service doesn't hold the code preimage. Its item is consumed without
+    running the code and with no gas used.
+- [same_round_storage_isolation-1](./tiny/same_round_storage_isolation-1.json) 🟢
+  - Two services accumulated in the same round. The first writes a storage key, the
+    second reads that key with a foreign `read` host call.
+  - The read doesn't observe the write made in the same round.
+- [same_round_storage_isolation-2](./tiny/same_round_storage_isolation-2.json) 🟢
+  - Same foreign `read` in the next block. The committed value is observed.
 
 ## Full Vectors
 

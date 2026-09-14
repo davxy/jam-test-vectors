@@ -292,7 +292,7 @@
         "services_statistics": []
     },
     "output": {
-        "err": "other_error"
+        "err": "bad_anchor_slot"
     },
     "post_state": {
         "avail_assignments": [

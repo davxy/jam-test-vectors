@@ -119,7 +119,8 @@ ErrorCode ::= ENUMERATED {
     banned-validator (23),
     lookup-anchor-not-recent (24),
     missing-work-results (25),
-    other-error (26)
+    bad-anchor-slot (26),
+    bad-erasure-shards (27)
 }
 
 Output ::= CHOICE {

@@ -14,7 +14,7 @@ tests that verify the invalidation of assignments following a verdict.
 
 ## Tiny Vectors
 
-- [progress_with_no_verdicts-1](tiny/progress_with_no_verdicts.json) 🟢 
+- [progress_with_no_verdicts-1](tiny/progress_with_no_verdicts-1.json) 🟢 
   - No verdicts, nothing special happens
 - [progress_with_verdicts-1](tiny/progress_with_verdicts-1.json) 🔴
   - Not sorted work reports within a verdict

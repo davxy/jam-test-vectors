@@ -35,14 +35,24 @@ imports (i), exports (x), extrinsic_size (z), extrinsic_count (x).
     set is used to construct report core assignment to pick expected guarantors.
 - [multiple_reports](./tiny/multiple_reports-1.json) 🟢
   - Multiple good work reports.
+- [with_avail_assignments](./tiny/with_avail_assignments-1.json) 🟢
+  - Report for a free core. Other cores already hold pending availability assignments.
+- [different_core_same_guarantors](./tiny/different_core_same_guarantors-1.json) 🟢
+  - Two reports for different cores. One is guaranteed under the previous rotation,
+    the other under the current one.
+  - The rotation shifts the cores assignment, so the same guarantors sign both reports.
 - [anchor_not_recent](./tiny/anchor_not_recent-1.json) 🔴
   - Context anchor is not recent enough.
 - [bad_beefy_mmr](./tiny/bad_beefy_mmr-1.json) 🔴
   - Context Beefy MMR root doesn't match the one at anchor.
+- [bad_anchor_slot](./tiny/bad_anchor_slot-1.json) 🔴
+  - Context anchor slot doesn't match the slot of the anchor block in recent history.
 - [bad_code_hash](./tiny/bad_code_hash-1.json) 🔴
   - Work result code hash doesn't match the one expected for the service.
 - [bad_core_index](./tiny/bad_core_index-1.json) 🔴
   - Core index is too big.
+- [bad_erasure_shards](./tiny/bad_erasure_shards-1.json) 🔴
+  - Package erasure shards count doesn't match the active validators set size.
 - [bad_service_id](./tiny/bad_service_id-1.json) 🔴
   - Work result service identifier doesn't have any associated account in state.
 - [bad_state_root](./tiny/bad_state_root-1.json) 🔴
@@ -61,11 +71,13 @@ imports (i), exports (x), extrinsic_size (z), extrinsic_count (x).
   - Report refers to a slot in the future with respect to container block slot.
 - [bad_signature](./tiny/bad_signature-1.json) 🔴
   - Invalid report guarantee signature.
+- [banned_validator_guarantee](./tiny/banned_validator_guarantee-1.json) 🔴
+  - Guarantee signed by a validator in the offenders set.
 - [high_work_report_gas](./tiny/high_work_report_gas-1.json) 🟢
   - Work report per core gas is very high, still less than the limit.
 - [too_high_work_report_gas](./tiny/too_high_work_report_gas-1.json) 🔴
   - Work report per core gas is too much high.
-- [service_item_gas_too_low](./tiny/service_item_gas_too_low.json) 🔴
+- [service_item_gas_too_low](./tiny/service_item_gas_too_low-1.json) 🔴
   - Accumulate gas is below the service minimum.
 - [many_dependencies](./tiny/many_dependencies-1.json) 🟢
   - Work report has many dependencies, still less than the limit.
@@ -107,8 +119,10 @@ imports (i), exports (x), extrinsic_size (z), extrinsic_count (x).
   - Unexpected guarantor for work report core.
 - [big_work_report_output](./tiny/big_work_report_output-1.json) 🟢
   - Work report output is very big, still less than the limit.
-- [too_big_work_report_output](./tiny/big_work_report_output-1.json) 🔴
+- [too_big_work_report_output](./tiny/too_big_work_report_output-1.json) 🔴
   - Work report output is size is over the limit.
+- [report_with_no_results](./tiny/report_with_no_results-1.json) 🔴
+  - Work report with an empty work results sequence.
 
 ## Full Vectors
 
