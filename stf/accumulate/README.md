@@ -31,13 +31,16 @@ statistics tuple, where `T(s)` counts the deferred transfers delivered to servic
 
 ## Gas Costs
 
-The gas cost for a single instruction is set to **$1$**, unlike in GP where
-it is set to $0$. This distinction is primarily intended to verify correct
-tracking of gas consumption.
+Instruction gas costs follow the GP 0.8.0 gas cost model
+(GP [#508](https://github.com/gavofyork/graypaper/pull/508)), as implemented by the
+PolkaVM `Full` cost model with the `L2Hit` cache model.
 
-All host calls have a gas cost of **$10$**, with the following exceptions:
-- **`transfer`**: Gas cost is set to **$10 + \omega_9$**, as specified in the GP.
-- **`log`**: Gas cost is set to **0**, as defined in [JIP-1](https://hackmd.io/@polkadot/jip1).
+Host-call gas costs follow the GP 0.8.0 host-call gas table
+(GP [#517](https://github.com/gavofyork/graypaper/pull/517)), including the
+`grow_heap` host call introduced by GP #508.
+
+The `log` host call ([JIP-1](https://github.com/polkadot-fellows/JIPs/blob/main/JIP-1.md))
+is not defined by the GP and is charged as an unknown host call: **1000** gas.
 
 ## Tiny Vectors
 
