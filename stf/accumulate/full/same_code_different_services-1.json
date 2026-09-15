@@ -1702,7 +1702,15 @@
                     },
                     "storage": [],
                     "preimage_blobs": [],
-                    "preimage_requests": []
+                    "preimage_requests": [
+                        {
+                            "key": {
+                                "hash": "0x08920fc623c7162c8bcf8bf74d8fc5b1610e0098420e8d5e75e949ef6c7360af",
+                                "length": 25692
+                            },
+                            "value": []
+                        }
+                    ]
                 }
             }
         ]
@@ -3363,7 +3371,15 @@
                     },
                     "storage": [],
                     "preimage_blobs": [],
-                    "preimage_requests": []
+                    "preimage_requests": [
+                        {
+                            "key": {
+                                "hash": "0x08920fc623c7162c8bcf8bf74d8fc5b1610e0098420e8d5e75e949ef6c7360af",
+                                "length": 25692
+                            },
+                            "value": []
+                        }
+                    ]
                 }
             }
         ]

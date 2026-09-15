@@ -1644,6 +1644,14 @@
                     },
                     "storage": [
                         {
+                            "key": "0x00",
+                            "value": "0x01000000"
+                        },
+                        {
+                            "key": "0x0100000000",
+                            "value": "0xd54f425784ed0e9dfc311eb56a162711e68d0b21b5e87fb701b4f1c578a026510000"
+                        },
+                        {
                             "key": "0x02d54f425784ed0e9dfc311eb56a162711e68d0b21b5e87fb701b4f1c578a026510000",
                             "value": "0x010109"
                         }
@@ -1683,7 +1691,20 @@
                         "last_accumulation_slot": 43,
                         "parent_service": 0
                     },
-                    "storage": [],
+                    "storage": [
+                        {
+                            "key": "0x00",
+                            "value": "0x01000000"
+                        },
+                        {
+                            "key": "0x0100000000",
+                            "value": "0x774935b629cc42513a66c8ed1a09f88b00fe35689032bafd5a26d52f464c48080000"
+                        },
+                        {
+                            "key": "0x02774935b629cc42513a66c8ed1a09f88b00fe35689032bafd5a26d52f464c48080000",
+                            "value": "0x010109"
+                        }
+                    ],
                     "preimage_blobs": [
                         {
                             "hash": "0x128fc8f0578f393bd12da1e73e030afe53fde62069fc8f6f87a5c914b1843135",
@@ -3320,7 +3341,7 @@
                     "exports": 0,
                     "accumulate_count": 1,
                     "accumulate_transfer_count": 0,
-                    "accumulate_gas_used": 1449153
+                    "accumulate_gas_used": 1453686
                 }
             }
         ],
@@ -3334,17 +3355,33 @@
                         "balance": 259523,
                         "min_item_gas": 10,
                         "min_memo_gas": 10,
-                        "bytes": 159771,
+                        "bytes": 159732,
                         "deposit_offset": 0,
-                        "items": 8,
+                        "items": 7,
                         "creation_slot": 0,
                         "last_accumulation_slot": 45,
                         "parent_service": 0
                     },
                     "storage": [
                         {
+                            "key": "0x00",
+                            "value": "0x02000000"
+                        },
+                        {
+                            "key": "0x0100000000",
+                            "value": "0xd54f425784ed0e9dfc311eb56a162711e68d0b21b5e87fb701b4f1c578a026510000"
+                        },
+                        {
+                            "key": "0x0101000000",
+                            "value": "0x6af0ea4ced28a7b06f7156c3b0f9d725187efa1932f812abd17fe66cc1553a8f0000"
+                        },
+                        {
                             "key": "0x026af0ea4ced28a7b06f7156c3b0f9d725187efa1932f812abd17fe66cc1553a8f0000",
                             "value": "0x010000"
+                        },
+                        {
+                            "key": "0x02d54f425784ed0e9dfc311eb56a162711e68d0b21b5e87fb701b4f1c578a026510000",
+                            "value": "0x010109"
                         }
                     ],
                     "preimage_blobs": [
@@ -3382,7 +3419,20 @@
                         "last_accumulation_slot": 43,
                         "parent_service": 0
                     },
-                    "storage": [],
+                    "storage": [
+                        {
+                            "key": "0x00",
+                            "value": "0x01000000"
+                        },
+                        {
+                            "key": "0x0100000000",
+                            "value": "0x774935b629cc42513a66c8ed1a09f88b00fe35689032bafd5a26d52f464c48080000"
+                        },
+                        {
+                            "key": "0x02774935b629cc42513a66c8ed1a09f88b00fe35689032bafd5a26d52f464c48080000",
+                            "value": "0x010109"
+                        }
+                    ],
                     "preimage_blobs": [
                         {
                             "hash": "0x128fc8f0578f393bd12da1e73e030afe53fde62069fc8f6f87a5c914b1843135",

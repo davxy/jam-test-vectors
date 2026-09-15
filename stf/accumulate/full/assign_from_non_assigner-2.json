@@ -1678,6 +1678,14 @@
                     },
                     "storage": [
                         {
+                            "key": "0x00",
+                            "value": "0x01000000"
+                        },
+                        {
+                            "key": "0x0100000000",
+                            "value": "0x774935b629cc42513a66c8ed1a09f88b00fe35689032bafd5a26d52f464c48080000"
+                        },
+                        {
                             "key": "0x02774935b629cc42513a66c8ed1a09f88b00fe35689032bafd5a26d52f464c48080000",
                             "value": "0x010109"
                         }
@@ -3339,6 +3347,14 @@
                     },
                     "storage": [
                         {
+                            "key": "0x00",
+                            "value": "0x01000000"
+                        },
+                        {
+                            "key": "0x0100000000",
+                            "value": "0xd54f425784ed0e9dfc311eb56a162711e68d0b21b5e87fb701b4f1c578a026510000"
+                        },
+                        {
                             "key": "0x02d54f425784ed0e9dfc311eb56a162711e68d0b21b5e87fb701b4f1c578a026510000",
                             "value": "0x010109"
                         }
@@ -3378,7 +3394,20 @@
                         "last_accumulation_slot": 43,
                         "parent_service": 0
                     },
-                    "storage": [],
+                    "storage": [
+                        {
+                            "key": "0x00",
+                            "value": "0x01000000"
+                        },
+                        {
+                            "key": "0x0100000000",
+                            "value": "0x774935b629cc42513a66c8ed1a09f88b00fe35689032bafd5a26d52f464c48080000"
+                        },
+                        {
+                            "key": "0x02774935b629cc42513a66c8ed1a09f88b00fe35689032bafd5a26d52f464c48080000",
+                            "value": "0x010109"
+                        }
+                    ],
                     "preimage_blobs": [
                         {
                             "hash": "0x128fc8f0578f393bd12da1e73e030afe53fde62069fc8f6f87a5c914b1843135",

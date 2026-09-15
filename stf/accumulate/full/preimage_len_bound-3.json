@@ -1621,7 +1621,7 @@
                     "exports": 0,
                     "accumulate_count": 1,
                     "accumulate_transfer_count": 0,
-                    "accumulate_gas_used": 178535
+                    "accumulate_gas_used": 182832
                 }
             }
         ],
@@ -1635,14 +1635,30 @@
                         "balance": 8590094113,
                         "min_item_gas": 10,
                         "min_memo_gas": 10,
-                        "bytes": 4295127179,
+                        "bytes": 4295127140,
                         "deposit_offset": 0,
-                        "items": 10,
+                        "items": 9,
                         "creation_slot": 0,
                         "last_accumulation_slot": 44,
                         "parent_service": 0
                     },
                     "storage": [
+                        {
+                            "key": "0x00",
+                            "value": "0x02000000"
+                        },
+                        {
+                            "key": "0x0100000000",
+                            "value": "0x774935b629cc42513a66c8ed1a09f88b00fe35689032bafd5a26d52f464c48080000"
+                        },
+                        {
+                            "key": "0x0101000000",
+                            "value": "0xd54f425784ed0e9dfc311eb56a162711e68d0b21b5e87fb701b4f1c578a026510000"
+                        },
+                        {
+                            "key": "0x02774935b629cc42513a66c8ed1a09f88b00fe35689032bafd5a26d52f464c48080000",
+                            "value": "0x010101"
+                        },
                         {
                             "key": "0x02d54f425784ed0e9dfc311eb56a162711e68d0b21b5e87fb701b4f1c578a026510000",
                             "value": "0x010004943e3d42cf248c99fa6346c24b66741090bd2c78f9ff691c5fd7a88ef51d27e2"
@@ -3291,7 +3307,7 @@
                     "exports": 0,
                     "accumulate_count": 1,
                     "accumulate_transfer_count": 0,
-                    "accumulate_gas_used": 166708
+                    "accumulate_gas_used": 171005
                 }
             }
         ],
@@ -3305,16 +3321,40 @@
                         "balance": 8590094113,
                         "min_item_gas": 10,
                         "min_memo_gas": 10,
-                        "bytes": 160019,
+                        "bytes": 159941,
                         "deposit_offset": 0,
-                        "items": 11,
+                        "items": 9,
                         "creation_slot": 0,
                         "last_accumulation_slot": 45,
                         "parent_service": 0
                     },
                     "storage": [
                         {
+                            "key": "0x00",
+                            "value": "0x03000000"
+                        },
+                        {
+                            "key": "0x0100000000",
+                            "value": "0x774935b629cc42513a66c8ed1a09f88b00fe35689032bafd5a26d52f464c48080000"
+                        },
+                        {
+                            "key": "0x0101000000",
+                            "value": "0xd54f425784ed0e9dfc311eb56a162711e68d0b21b5e87fb701b4f1c578a026510000"
+                        },
+                        {
+                            "key": "0x0102000000",
+                            "value": "0x6af0ea4ced28a7b06f7156c3b0f9d725187efa1932f812abd17fe66cc1553a8f0000"
+                        },
+                        {
                             "key": "0x026af0ea4ced28a7b06f7156c3b0f9d725187efa1932f812abd17fe66cc1553a8f0000",
+                            "value": "0x010004943e3d42cf248c99fa6346c24b66741090bd2c78f9ff691c5fd7a88ef51d27e2"
+                        },
+                        {
+                            "key": "0x02774935b629cc42513a66c8ed1a09f88b00fe35689032bafd5a26d52f464c48080000",
+                            "value": "0x010101"
+                        },
+                        {
+                            "key": "0x02d54f425784ed0e9dfc311eb56a162711e68d0b21b5e87fb701b4f1c578a026510000",
                             "value": "0x010004943e3d42cf248c99fa6346c24b66741090bd2c78f9ff691c5fd7a88ef51d27e2"
                         }
                     ],

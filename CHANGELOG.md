@@ -9,7 +9,7 @@
   (GP [#514](https://github.com/gavofyork/graypaper/pull/514),
   [#527](https://github.com/gavofyork/graypaper/pull/527))
 * `RefineContext` carries `anchor-slot` and `lookup-anchor-state-root`.
-  Recent blocks history items carry the block `slot`.
+  Recent blocks history items and the history STF input carry the block `slot`.
   (GP [#526](https://github.com/gavofyork/graypaper/pull/526))
 * Availability assignments hold the full `ReportGuarantee` and the
   `registered-slot` instead of the bare work report and a timeout.

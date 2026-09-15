@@ -8,7 +8,8 @@ Both the binary and json formats adhere to the overarching JAM protocol ASN.1
 
 ## Test Service Code
 
-Test vectors invoke the `accumulate` method of the provided [test-service](./test-service).  
+Test vectors invoke the `accumulate` method of the polkajam
+[test-service](https://github.com/paritytech/polkajam/tree/main/services/test-service).
 
 The PVM binary, which refers to the compiled version of the `test-service`, is
 generated using the [`jam-pvm-build`](https://crates.io/crates/jam-pvm-build)
