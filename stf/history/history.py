@@ -1,11 +1,13 @@
 from bin_to_json import StfTestVector
 from jam_types import (
+    HeaderHash,
     Null,
+    OpaqueHash,
     ReportedWorkPackage,
     Struct,
+    TimeSlot,
     Vec,
     RecentBlocks,
-    BlockInfo,
 )
 from jam_types import class_name as n
 
@@ -19,8 +21,14 @@ class HistoryState(Struct):
         ('beta', n(RecentBlocks))
     ]
 
-class HistoryInput(BlockInfo):
-    pass
+class HistoryInput(Struct):
+    type_mapping = [
+        ('header_hash', n(HeaderHash)),
+        ('parent_state_root', n(OpaqueHash)),
+        ('accumulate_root', n(OpaqueHash)),
+        ('slot', n(TimeSlot)),
+        ('work_packages', n(ReportedWorkPackages))
+    ]
 
 class HistoryOutput(Null):
     pass

@@ -3,7 +3,7 @@
 HistoryModule DEFINITIONS ::= BEGIN
 
 IMPORTS
-    BlockInfo, RecentBlocks
+    OpaqueHash, ReportedWorkPackage, RecentBlocks, HeaderHash, StateRoot, TimeSlot
         FROM JamTypes;
 
 State ::= SEQUENCE {
@@ -11,8 +11,18 @@ State ::= SEQUENCE {
     beta RecentBlocks
 }
 
--- The block being appended to the recent blocks history.
-Input ::= BlockInfo
+Input ::= SEQUENCE {
+    -- [Hash(H)] Header hash
+    header-hash HeaderHash,
+    -- [H_r] Parent state root
+    parent-state-root StateRoot,
+    -- [r] Accumulation result Merkle tree root
+    accumulate-root OpaqueHash,
+    -- [H_t] Header slot
+    slot TimeSlot,
+    -- [(((g_w)_s)_h, ((g_w)_s)_e) | g ∈ E_G] Sequence of reported work packages
+    work-packages SEQUENCE OF ReportedWorkPackage
+}
 
 Output ::= NULL
 

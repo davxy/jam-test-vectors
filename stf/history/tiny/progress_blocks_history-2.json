@@ -1,10 +1,10 @@
 {
     "input": {
         "header_hash": "0x241d129c6edc2114e6dfba7d556f7f7c66399b55ceec3078a53d44c752ba7e9a",
-        "beefy_root": "0x010000001831dde64e40bfd8639c2d122e5ac00fe133c48cd16e1621ca6d5cf0",
-        "state_root": "0xb8e10d3b7507515a48439dc58bc318c48a120b656136699f42bfd2bd45473bec",
-        "slot": 759583674,
-        "reported": [
+        "parent_state_root": "0x1831dde64e40bfd8639c2d122e5ac00fe133c48cd16e1621ca6d5cf0b8e10d3b",
+        "accumulate_root": "0x7507515a48439dc58bc318c48a120b656136699f42bfd2bd45473becba53462d",
+        "slot": 1,
+        "work_packages": [
             {
                 "hash": "0x3cc8d8c94e7b3ee01e678c63fd6b5db894fc807dff7fe10a11ab41e70194894d",
                 "exports_root": "0xc0edfe377d20b9f4ed7d9df9511ef904c87e24467364f0f7f75f20cfe90dd8fb"
