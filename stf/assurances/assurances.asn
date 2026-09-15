@@ -14,7 +14,9 @@ State ::= SEQUENCE {
     avail-assignments AvailabilityAssignments,
 
     -- [κ] Prior active validators.
-    curr-validators ValidatorsData
+    curr-validators ValidatorsData,
+    -- [κ'] Posterior active validators.
+    post-validators ValidatorsData
 }
 
 Input ::= SEQUENCE {

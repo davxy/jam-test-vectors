@@ -31,6 +31,12 @@ Both the binary and json formats adhere to the overarching JAM protocol ASN.1
   - Assurers not sorted.
 - [assurers_not_sorted_or_unique-2](tiny/assurers_not_sorted_or_unique-2.json)🔴
   - Duplicate assurer.
+- [val_set_size_change_clears_pending_reports-1](tiny/val_set_size_change_clears_pending_reports-1.json) 🟢
+  - Posterior active validators set is smaller than the prior one.
+  - Assurances, signed by the prior set, make the core 0 report available.
+  - Every other pending report is cleared.
+  - The transition compares the set sizes only: under the tiny spec the posterior set goes
+    below the minimum size, under the full spec it shrinks to the minimum size.
 
 ## Full Vectors
 

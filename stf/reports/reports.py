@@ -101,5 +101,7 @@ class ReportsTestVector(StfTestVector):
         22: "work_report_too_big",
         23: "banned_validator",
         24: "lookup_anchor_not_recent",
-        25: "missing_work_results"
+        25: "missing_work_results",
+        26: "bad_anchor_slot",
+        27: "bad_erasure_shards"
      }

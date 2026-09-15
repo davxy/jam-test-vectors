@@ -16,6 +16,7 @@ class AssurancesState(Struct):
     type_mapping = [
         ('avail_assignments', n(AvailabilityAssignments)),
         ('curr_validators', n(ValidatorsData)),
+        ('post_validators', n(ValidatorsData)),
     ]  
 
 class AssurancesInput(Struct):

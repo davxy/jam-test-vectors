@@ -15,6 +15,7 @@ as they play a crucial role in updating the state.
 - `header_hash`: The hash of the current block header being processed.
 - `parent_state_root` ($H_r$): The state root of the parent block, as found in the current block header.
 - `accumulate_root`: The Merkle root resulting from the accumulation process.
+- `slot` ($H_t$): The slot of the current block, as found in its header.
 - `work_packages`: A sequence of work package hashes.
 
 ## MMR
