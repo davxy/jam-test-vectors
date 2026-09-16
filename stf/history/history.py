@@ -5,6 +5,7 @@ from jam_types import (
     OpaqueHash,
     ReportedWorkPackage,
     Struct,
+    TimeSlot,
     Vec,
     RecentBlocks,
 )
@@ -25,6 +26,7 @@ class HistoryInput(Struct):
         ('header_hash', n(HeaderHash)),
         ('parent_state_root', n(OpaqueHash)),
         ('accumulate_root', n(OpaqueHash)),
+        ('slot', n(TimeSlot)),
         ('work_packages', n(ReportedWorkPackages))
     ]
 

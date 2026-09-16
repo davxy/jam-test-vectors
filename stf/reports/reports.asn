@@ -118,7 +118,9 @@ ErrorCode ::= ENUMERATED {
     work-report-too-big (22),
     banned-validator (23),
     lookup-anchor-not-recent (24),
-    missing-work-results (25)
+    missing-work-results (25),
+    bad-anchor-slot (26),
+    bad-erasure-shards (27)
 }
 
 Output ::= CHOICE {
