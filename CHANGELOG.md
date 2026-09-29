@@ -73,6 +73,12 @@
   [#558](https://github.com/gavofyork/graypaper/pull/558) allows non-manager
   privilege holders to hand over their role via `bless`; both changes will
   be applied together.
+* The PVM gas cost model counts the destination register of `cmov_iz`,
+  `cmov_nz`, `cmov_iz_imm` and `cmov_nz_imm` as a source register, as per GP
+  [#559](https://github.com/gavofyork/graypaper/pull/559). The recorded gas of
+  the accumulate vectors follows this rule.
+* Program blobs are limited to 2^25 octets of code and 2^24 jump table
+  entries, as per GP [#559](https://github.com/gavofyork/graypaper/pull/559).
 
 ## [0.7.2] - 01-12-2025
 
