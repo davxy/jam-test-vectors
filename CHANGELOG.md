@@ -75,8 +75,9 @@
   be applied together.
 * The PVM gas cost model counts the destination register of `cmov_iz`,
   `cmov_nz`, `cmov_iz_imm` and `cmov_nz_imm` as a source register, as per GP
-  [#559](https://github.com/gavofyork/graypaper/pull/559). The recorded gas of
-  the accumulate vectors follows this rule.
+  [#559](https://github.com/gavofyork/graypaper/pull/559). The accumulate
+  vectors and the `fuzzy` and `fuzzy_light` block import traces follow this
+  rule.
 * Program blobs are limited to 2^25 octets of code and 2^24 jump table
   entries, as per GP [#559](https://github.com/gavofyork/graypaper/pull/559).
 
