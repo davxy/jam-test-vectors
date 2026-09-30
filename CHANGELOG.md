@@ -55,6 +55,9 @@
 
 * Trie vectors: node type discriminators moved to the most significant bits
   of the head byte, key bits consumed most significant bit first.
+* `ServiceActivityRecord.extrinsic-size` is a `U64`. The GP types it in `N`,
+  and the sum over the reports of one service can exceed `U32`. The field is
+  compact encoded, so no vector changes.
 
 ### Deviations
 

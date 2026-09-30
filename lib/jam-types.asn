@@ -518,7 +518,7 @@ ServiceActivityRecord ::= SEQUENCE {
     -- Total number of extrinsics used
     extrinsic-count       U32,
     -- Total size of extrinsics used
-    extrinsic-size        U32,
+    extrinsic-size        U64,
     -- Number of segments exported into the DL
     exports               U32,
     -- Number of work-items accumulated
