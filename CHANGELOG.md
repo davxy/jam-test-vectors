@@ -58,6 +58,11 @@
 * `ServiceActivityRecord.extrinsic-size` is a `U64`. The GP types it in `N`,
   and the sum over the reports of one service can exceed `U32`. The field is
   compact encoded, so no vector changes.
+* `TicketAttempt` is encoded as one octet, as the GP and the schema say. The
+  `.bin` files used the compact form, which differs for attempts of 128 or
+  more. Only `stf/safrole/full/enact-epoch-change-with-set-resize-{2,3,4}.bin`
+  change, the JSON files do not change.
+  ([#114](https://github.com/davxy/jam-test-vectors/issues/114))
 
 ### Deviations
 
