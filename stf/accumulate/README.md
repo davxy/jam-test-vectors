@@ -123,6 +123,42 @@ storage, together with the gas it consumed.
 - [work_for_ejected_service-3](./tiny/work_for_ejected_service-3.json) 🟢
   - Work report Y is executed and unlocks work report X.
   - Work report X is not actually executed because account can't be loaded.
+- [work_for_service_ejected_in_same_round_low_ejector-1](./tiny/work_for_service_ejected_in_same_round_low_ejector-1.json) 🟢
+  - A service ejects a zombie service which has a work digest in the same round. The
+    ejector id is lower than the zombie id. The statistics of the zombie count the digest.
+- [work_for_service_ejected_in_same_round_high_ejector-1](./tiny/work_for_service_ejected_in_same_round_high_ejector-1.json) 🟢
+  - Same as above, with an ejector id higher than the zombie id.
+- [transfer_for_service_ejected_in_same_round_low_ejector-1](./tiny/transfer_for_service_ejected_in_same_round_low_ejector-1.json) 🟢
+  - A service ejects a zombie service in the round in which a transfer to the zombie
+    arrives. The ejector id is lower than the zombie id. The statistics of the zombie count
+    the transfer.
+- [transfer_for_service_ejected_in_same_round_high_ejector-1](./tiny/transfer_for_service_ejected_in_same_round_high_ejector-1.json) 🟢
+  - Same as above, with an ejector id higher than the zombie id.
+- [transfer_for_ejected_service_that_accumulates_low_ejector-1](./tiny/transfer_for_ejected_service_that_accumulates_low_ejector-1.json) 🟢
+  - A service sends a transfer to a zombie service which accumulates and is ejected in the
+    same round. The transfer arrives in the next round, when the zombie no longer exists,
+    and its amount is burned. The ejector id is lower than the zombie id. The statistics of
+    the zombie count the work digest and the transfer.
+- [transfer_for_ejected_service_that_accumulates_high_ejector-1](./tiny/transfer_for_ejected_service_that_accumulates_high_ejector-1.json) 🟢
+  - Same as above, with an ejector id higher than the zombie id.
+- [transfer_to_service_ejected_by_sender_transfer_first-1](./tiny/transfer_to_service_ejected_by_sender_transfer_first-1.json) 🟢
+  - One invocation calls `transfer` to a zombie service and then `eject` on it. Both
+    succeed. The amount is burned in the next round.
+- [transfer_to_service_ejected_by_sender_eject_first-1](./tiny/transfer_to_service_ejected_by_sender_eject_first-1.json) 🟢
+  - One invocation calls `eject` on a zombie service and then `transfer` to it. The
+    `transfer` returns `WHO`. Nothing is burned.
+- [recreate_ejected_service-1](./tiny/recreate_ejected_service-1.json) 🟢
+  - The registrar ejects a zombie service and creates its id again with `new`, in one
+    invocation. Both host calls succeed. The prior account stays and gets the endowment.
+    The new account does not reach the state (GP 0.8.0 merge rule).
+- [recreate_ejected_service_that_accumulates-1](./tiny/recreate_ejected_service_that_accumulates-1.json) 🟢
+  - Same as `recreate_ejected_service-1`, but the zombie accumulates a transfer in the same
+    round. The prior account stays and gets the transfer and the endowment.
+- [recreate_service_ejected_in_earlier_round-1](./tiny/recreate_service_ejected_in_earlier_round-1.json) 🟢
+  - The registrar ejects a zombie service which has a work digest in the same round. In a
+    later round of the same block the registrar creates the id again. The endowment
+    transfer fails. The new account gets the slot of the block as its last accumulation
+    slot.
 - [designate_with_invalid_count-1](./tiny/designate_with_invalid_count-1.json) 🟢
   - `designate` host call with one key less than the minimum validators set size.
 - [designate_with_invalid_count-2](./tiny/designate_with_invalid_count-2.json) 🟢
