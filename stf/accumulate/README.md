@@ -154,6 +154,10 @@ storage, together with the gas it consumed.
 - [recreate_ejected_service_that_accumulates-1](./tiny/recreate_ejected_service_that_accumulates-1.json) 🟢
   - Same as `recreate_ejected_service-1`, but the zombie accumulates a transfer in the same
     round. The prior account stays and gets the transfer and the endowment.
+- [recreate_ejected_service_by_higher_registrar-1](./tiny/recreate_ejected_service_by_higher_registrar-1.json) 🟢
+  - Same as `recreate_ejected_service_that_accumulates-1`, but the registrar id is higher
+    than the zombie id, so the own result of the zombie merges first. The prior account
+    stays and gets the transfer and the endowment.
 - [recreate_service_ejected_in_earlier_round-1](./tiny/recreate_service_ejected_in_earlier_round-1.json) 🟢
   - The registrar ejects a zombie service which has a work digest in the same round. In a
     later round of the same block the registrar creates the id again. The endowment

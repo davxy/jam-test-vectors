@@ -69,8 +69,9 @@
   `transfer_for_service_ejected_in_same_round`,
   `transfer_for_ejected_service_that_accumulates` and
   `transfer_to_service_ejected_by_sender`. The registrar creates an ejected id
-  again: `recreate_ejected_service`, `recreate_ejected_service_that_accumulates`
-  and `recreate_service_ejected_in_earlier_round`. The `recreate_ejected_service`
+  again: `recreate_ejected_service`, `recreate_ejected_service_that_accumulates`,
+  `recreate_ejected_service_by_higher_registrar` and
+  `recreate_service_ejected_in_earlier_round`. The `recreate_ejected_service`
   vectors follow the GP 0.8.0 merge rule `(d ∪ n) \ m`, so the prior account
   stays. GP [#539](https://github.com/gavofyork/graypaper/pull/539) replaces
   this rule after 0.8.0.
