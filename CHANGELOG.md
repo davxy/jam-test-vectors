@@ -1,3 +1,14 @@
+## [0.8.1] - Unreleased
+
+### Changed
+
+* Safrole: the keys of an offender in the pending validator set are replaced
+  by the null key, in `gamma_k` and in the epoch mark. Its Ed25519 part is
+  `0x02` followed by zeros, which is not a curve point. The zero key accepts
+  forged signatures. The other parts stay zero. Only
+  `enact-epoch-change-with-padding-1` changes.
+  (GP [#543](https://github.com/gavofyork/graypaper/pull/543))
+
 ## [0.8.0] - 10-09-2026
 
 ### Changed
