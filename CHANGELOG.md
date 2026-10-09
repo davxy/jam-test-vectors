@@ -1,3 +1,15 @@
+## [0.8.1] - Unreleased
+
+### Changed
+
+* Safrole: the keys of an offender in the pending validator set are replaced
+  by the null key, in `gamma_k` and in the epoch mark. Its Ed25519 part is
+  `0x02` followed by zeros, which is not a curve point.
+  (GP [#543](https://github.com/gavofyork/graypaper/pull/543))
+* New `compile` host call at index 9. The host calls from `machine` to
+  `provide` move up by one index.
+  (GP [#530](https://github.com/gavofyork/graypaper/pull/530))
+
 ## [0.8.0] - 10-09-2026
 
 ### Changed
@@ -75,6 +87,9 @@
   vectors follow the GP 0.8.0 merge rule `(d ∪ n) \ m`, so the prior account
   stays. GP [#539](https://github.com/gavofyork/graypaper/pull/539) replaces
   this rule after 0.8.0.
+* New reports vector `work_report_gas_overflow`: the accumulate gas of two
+  digests adds up past the 64-bit maximum. The sum is above `G_A`, so the
+  error is `work_report_gas_too_high`.
 
 ### Deviations
 
