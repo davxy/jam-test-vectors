@@ -75,6 +75,9 @@
   vectors follow the GP 0.8.0 merge rule `(d ∪ n) \ m`, so the prior account
   stays. GP [#539](https://github.com/gavofyork/graypaper/pull/539) replaces
   this rule after 0.8.0.
+* New reports vector `work_report_gas_overflow`: the accumulate gas of two
+  digests adds up past the 64-bit maximum. The sum is above `G_A`, so the
+  error is `work_report_gas_too_high`.
 
 ### Deviations
 
