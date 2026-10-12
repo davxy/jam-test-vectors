@@ -9,6 +9,9 @@
 * New `compile` host call at index 9. The host calls from `machine` to
   `provide` move up by one index.
   (GP [#530](https://github.com/gavofyork/graypaper/pull/530))
+* Preimage lengths are bounded by `N_P` (below 2^32-2) instead of `N_L`.
+  The preimage host calls and `new` return `HUH` outside this bound.
+  (GP [#542](https://github.com/gavofyork/graypaper/pull/542))
 
 ## [0.8.0] - 10-09-2026
 

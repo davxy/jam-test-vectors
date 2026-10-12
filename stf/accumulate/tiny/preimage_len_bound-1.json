@@ -33,7 +33,7 @@
                         "payload_hash": "0x9a00110a56ecaf8954ecc77d17076b4260ffd6844e83b2f35ee42aa17effc89e",
                         "accumulate_gas": 2000000,
                         "result": {
-                            "ok": "0x0106943e3d42cf248c99fa6346c24b66741090bd2c78f9ff691c5fd7a88ef51d27e200000000010000000000"
+                            "ok": "0x0106943e3d42cf248c99fa6346c24b66741090bd2c78f9ff691c5fd7a88ef51d27e2feffffff000000000000"
                         },
                         "refine_load": {
                             "gas_used": 0,
@@ -96,7 +96,7 @@
                     "service": {
                         "version": 0,
                         "code_hash": "0x6530702c680e7a7836b2c7d06438275868022d77992f4a54abe9296ea760033a",
-                        "balance": 8590062304,
+                        "balance": 8590062300,
                         "min_item_gas": 10,
                         "min_memo_gas": 10,
                         "bytes": 127594,
@@ -235,7 +235,7 @@
                     "service": {
                         "version": 0,
                         "code_hash": "0x6530702c680e7a7836b2c7d06438275868022d77992f4a54abe9296ea760033a",
-                        "balance": 8590062304,
+                        "balance": 8590062300,
                         "min_item_gas": 10,
                         "min_memo_gas": 10,
                         "bytes": 127778,
