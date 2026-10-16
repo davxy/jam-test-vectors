@@ -9,7 +9,7 @@
                         "erasure_root": "0x9fc7e637969aef1a95dfb560a914cf5161a76498db3aa19df131cea199ed6e44",
                         "erasure_shards": 1023,
                         "exports_root": "0x5c9dca800c145685f052ce1ba343e2b66b4c333ee4c4ca3b29cb347b1009cb83",
-                        "exports_count": 3
+                        "exports_count": 17
                     },
                     "context": {
                         "anchor": "0x6900f39559232990f5e2c1353ee2316b063604a07bdf14322dbc0188f76b4d3f",
@@ -49,15 +49,15 @@
                 "signatures": [
                     {
                         "validator_index": 16,
-                        "signature": "0x43778017236c20ae397412fcc08933ba10bf07da1c97b6248e55425bde1ddea7d37e92793b1228dd1c5e2adad94acb1956de3996fb3fd344af9f21e317d9570e"
+                        "signature": "0x01f1cd76bd87ec9f9d763cbc98c98fd311250bbbc578511262fe0ed14fd0ce129b69c5de8e649add61d1641032758339c2ee088c5c948beef103823188d0de09"
                     },
                     {
                         "validator_index": 450,
-                        "signature": "0x033e6026967e00c8cc0a1ffdf2fe7401cf33f4387f8324ecd838a7233bdd1c379bbff46fb79bdd4ba79c670eb877266ac8b6ea70fd5b605a8e8ed2dc378a2407"
+                        "signature": "0x32a510eaaf9970459c0087a1a072296eb1ac6b5b62dfe8119abff0887354ea7b84997a6009a8e09334823cdb73f2b304ec0638cd9cf379c66153429abb6a8203"
                     },
                     {
                         "validator_index": 1014,
-                        "signature": "0x70c57295576f533dd6ac246c7936e77e2601438bb98de2327a12feefef0834159296a58b96751ecba148bb73c812c86d6433bd177f5ec9a03234afb76ddc580b"
+                        "signature": "0xda3b9e2c333ea4c9ada9f5ee8c3b0d547429b394862a81b74cf488e6d718df66b7a6beb859a27a03a640eb7319ef6c12d06c5738384f93a239247730812f0907"
                     }
                 ]
             }

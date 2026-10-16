@@ -9,7 +9,7 @@
                         "erasure_root": "0x9fc7e637969aef1a95dfb560a914cf5161a76498db3aa19df131cea199ed6e44",
                         "erasure_shards": 1023,
                         "exports_root": "0x5c9dca800c145685f052ce1ba343e2b66b4c333ee4c4ca3b29cb347b1009cb83",
-                        "exports_count": 3
+                        "exports_count": 17
                     },
                     "context": {
                         "anchor": "0xdc3c07af9aa6b0ff4942641e43ce466c2172b31cdce3e04e7067045d606d3149",
@@ -49,7 +49,7 @@
                 "signatures": [
                     {
                         "validator_index": 16,
-                        "signature": "0x83bfeb6d33d23edf0d460af1f9582077101a8c582d64cca3eb491c334140fd13e8f629b8610e8a426fa785df3f100b5fd84a41b94c2eeda208b2c262193a0b0b"
+                        "signature": "0x33e23093b594df42a104e1c5c6717ef4f8b68ba1834a5fcb0176f6caaec922f7fc025311387632ec056590fc5ad17a7fafbf62228a61f30e5f2b186ce6f56402"
                     }
                 ]
             }
