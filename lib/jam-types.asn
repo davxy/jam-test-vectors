@@ -506,9 +506,9 @@ CoresStatistics ::= SEQUENCE (SIZE(core-count)) OF CoreActivityRecord
 -- Record of a service's activity
 ServiceActivityRecord ::= SEQUENCE {
     -- Number of preimages provided to this service
-    provided-count        U16,
+    provided-count        U32,
     -- Total size of preimages provided to this service
-    provided-size         U32,
+    provided-size         U64,
     -- Number of work-items refined
     refinement-count      U32,
     -- Amount of gas used for refinement

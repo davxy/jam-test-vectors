@@ -25,6 +25,13 @@ extrinsic_size (z), extrinsic_count (x), bundle_size (b), gas_used (u).
 For services statistics we may update refinement_count (r.0), refinement_gas_used (r.1),
 imports (i), exports (x), extrinsic_size (z), extrinsic_count (x).
 
+## Work-Package Limits
+
+The vectors `refine_load_at_report_limits`, `too_high_refine_load`, `big_bundle_high_auth_gas`,
+`too_big_bundle`, `too_high_auth_gas`, `exports_count_sums_digests` and `bad_exports_count`
+follow GP [#563](https://github.com/gavofyork/graypaper/pull/563). GP 0.8.0 does not have these
+rules (see the CHANGELOG deviations).
+
 ## Tiny Vectors
 
 - [report_curr_rotation](./tiny/report_curr_rotation-1.json) 🟢
@@ -43,6 +50,8 @@ imports (i), exports (x), extrinsic_size (z), extrinsic_count (x).
   - The rotation shifts the cores assignment, so the same guarantors sign both reports.
 - [anchor_not_recent](./tiny/anchor_not_recent-1.json) 🔴
   - Context anchor is not recent enough.
+- [lookup_anchor_not_recent](./tiny/lookup_anchor_not_recent-1.json) 🔴
+  - Context lookup anchor slot is one slot older than the maximum lookup anchor age `L`.
 - [bad_beefy_mmr](./tiny/bad_beefy_mmr-1.json) 🔴
   - Context Beefy MMR root doesn't match the one at anchor.
 - [bad_anchor_slot](./tiny/bad_anchor_slot-1.json) 🔴
@@ -77,6 +86,8 @@ imports (i), exports (x), extrinsic_size (z), extrinsic_count (x).
   - Work report per core gas is very high, still less than the limit.
 - [too_high_work_report_gas](./tiny/too_high_work_report_gas-1.json) 🔴
   - Work report per core gas is too much high.
+- [work_report_gas_overflow](./tiny/work_report_gas_overflow-1.json) 🔴
+  - Work report gas of two digests adds up past the 64-bit maximum.
 - [service_item_gas_too_low](./tiny/service_item_gas_too_low-1.json) 🔴
   - Accumulate gas is below the service minimum.
 - [many_dependencies](./tiny/many_dependencies-1.json) 🟢
@@ -123,6 +134,37 @@ imports (i), exports (x), extrinsic_size (z), extrinsic_count (x).
   - Work report output is size is over the limit.
 - [report_with_no_results](./tiny/report_with_no_results-1.json) 🔴
   - Work report with an empty work results sequence.
+- [refine_load_at_report_limits](./tiny/refine_load_at_report_limits-1.json) 🟢
+  - Two reports. In each report every refine-load sum is at its work-package limit, and the
+    extrinsic size uses the rest of the input-size limit `W_I` after the imports.
+  - The service statistics sum the two reports, so they are above the limits.
+- [too_high_refine_load](./tiny/too_high_refine_load-1.json) 🔴
+  - Refine gas of two digests is one above `G_R`. Each digest is within the limit.
+- [too_high_refine_load](./tiny/too_high_refine_load-2.json) 🔴
+  - Imports of two digests are one above `W_M`.
+- [too_high_refine_load](./tiny/too_high_refine_load-3.json) 🔴
+  - Extrinsic count of two digests is one above `T`.
+- [too_high_refine_load](./tiny/too_high_refine_load-4.json) 🔴
+  - Extrinsic size of two digests is one above `W_I`.
+- [too_high_refine_load](./tiny/too_high_refine_load-5.json) 🔴
+  - Exports of two digests are one above `W_X`.
+- [too_high_refine_load](./tiny/too_high_refine_load-6.json) 🔴
+  - Imports at `W_M` in one digest, extrinsic size in the other. Each import counts `W_F` in
+    the input size, so the sum is one above `W_I`.
+- [too_high_refine_load](./tiny/too_high_refine_load-7.json) 🔴
+  - Refine gas of two digests adds up past the 64-bit maximum.
+- [big_bundle_high_auth_gas](./tiny/big_bundle_high_auth_gas-1.json) 🟢
+  - Bundle length at `W_B` and authorizer gas used at `G_I`.
+- [too_big_bundle](./tiny/too_big_bundle-1.json) 🔴
+  - Bundle length is one above `W_B`.
+- [too_high_auth_gas](./tiny/too_high_auth_gas-1.json) 🔴
+  - Authorizer gas used is one above `G_I`.
+- [exports_count_sums_digests](./tiny/exports_count_sums_digests-1.json) 🟢
+  - Two digests export segments. The segment count is the sum of the digest exports.
+- [bad_exports_count](./tiny/bad_exports_count-1.json) 🔴
+  - Segment count is one below the sum of the digest exports.
+- [bad_exports_count](./tiny/bad_exports_count-2.json) 🔴
+  - Segment count is one above the sum of the digest exports.
 
 ## Full Vectors
 
