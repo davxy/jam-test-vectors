@@ -12,6 +12,11 @@
 * Preimage lengths are bounded by `N_P` (below 2^32-2) instead of `N_L`.
   The preimage host calls and `new` return `HUH` outside this bound.
   (GP [#542](https://github.com/gavofyork/graypaper/pull/542))
+* Bandersnatch VRF specification draft 35 (`ark-vrf` 0.6.0) instead of
+  draft 29. The Bandersnatch keys of the trivial validators change, and so
+  do the ring commitments, the padding point, the ticket signatures and the
+  ticket ids. All STF vectors with Bandersnatch keys change.
+  (GP [#550](https://github.com/gavofyork/graypaper/pull/550))
 
 ## [0.8.0] - 10-09-2026
 
