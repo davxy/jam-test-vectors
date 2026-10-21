@@ -168,11 +168,11 @@ storage, together with the gas it consumed.
 - [designate_with_invalid_count-2](./tiny/designate_with_invalid_count-2.json) 🟢
   - `designate` host call with the minimum validators set size.
 - [preimage_len_bound-1](./tiny/preimage_len_bound-1.json) 🟢
-  - `solicit` host call with a preimage length of 2^32. Rejected.
+  - `solicit` host call with a preimage length of 2^32-2. Rejected.
 - [preimage_len_bound-2](./tiny/preimage_len_bound-2.json) 🟢
-  - `solicit` host call with a preimage length of 2^32-1. Accepted.
+  - `solicit` host call with a preimage length of 2^32-3. Accepted.
 - [preimage_len_bound-3](./tiny/preimage_len_bound-3.json) 🟢
-  - `forget` host call for the unprovided preimage of length 2^32-1. Dropped.
+  - `forget` host call for the unprovided preimage of length 2^32-3. Dropped.
 - [always_accumulate-1](./tiny/always_accumulate-1.json) 🟢
   - Service in the always-accumulate set, no reports. Accumulates zero items within its free gas.
 - [always_accumulate-2](./tiny/always_accumulate-2.json) 🟢
