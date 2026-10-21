@@ -103,5 +103,9 @@ class ReportsTestVector(StfTestVector):
         24: "lookup_anchor_not_recent",
         25: "missing_work_results",
         26: "bad_anchor_slot",
-        27: "bad_erasure_shards"
+        27: "bad_erasure_shards",
+        28: "refine_load_too_high",
+        29: "bad_exports_count",
+        30: "bundle_too_big",
+        31: "auth_gas_too_high"
      }

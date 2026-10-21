@@ -90,9 +90,14 @@
   vectors follow the GP 0.8.0 merge rule `(d ∪ n) \ m`, so the prior account
   stays. GP [#539](https://github.com/gavofyork/graypaper/pull/539) replaces
   this rule after 0.8.0.
+* `ServiceActivityRecord.provided-count` is a `U32` and `provided-size` is a
+  `U64`. The GP types them in `N`. The fields are compact encoded, so no
+  vector changes.
 * New reports vector `work_report_gas_overflow`: the accumulate gas of two
   digests adds up past the 64-bit maximum. The sum is above `G_A`, so the
   error is `work_report_gas_too_high`.
+* New reports vector `lookup_anchor_not_recent`: the lookup anchor is one slot
+  older than `L`.
 
 ### Deviations
 
@@ -118,6 +123,13 @@
   rule.
 * Program blobs are limited to 2^25 octets of code and 2^24 jump table
   entries, as per GP [#559](https://github.com/gavofyork/graypaper/pull/559).
+* A work report is invalid if a sum of the refine loads of its digests is
+  above its work-package limit, if its bundle length is above `W_B`, if its
+  authorizer gas used is above `G_I`, or if its segment count is not the sum of
+  the digest export counts, as per GP
+  [#563](https://github.com/gavofyork/graypaper/pull/563). New reports errors
+  `refine_load_too_high` (28), `bad_exports_count` (29), `bundle_too_big` (30)
+  and `auth_gas_too_high` (31).
 
 ## [0.7.2] - 01-12-2025
 
