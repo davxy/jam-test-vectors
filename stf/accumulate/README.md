@@ -130,8 +130,9 @@ storage, together with the gas it consumed.
   - Same as above, with an ejector id higher than the zombie id.
 - [transfer_for_service_ejected_in_same_round_low_ejector-1](./tiny/transfer_for_service_ejected_in_same_round_low_ejector-1.json) 🟢
   - A service ejects a zombie service in the round in which a transfer to the zombie
-    arrives. The ejector id is lower than the zombie id. The statistics of the zombie count
-    the transfer.
+    arrives. The transfer waits for the next round, because the ejector supervises the
+    zombie (GP #539 `T`), and then the zombie no longer exists. The ejector id is lower
+    than the zombie id. The statistics of the zombie count the transfer.
 - [transfer_for_service_ejected_in_same_round_high_ejector-1](./tiny/transfer_for_service_ejected_in_same_round_high_ejector-1.json) 🟢
   - Same as above, with an ejector id higher than the zombie id.
 - [transfer_for_ejected_service_that_accumulates_low_ejector-1](./tiny/transfer_for_ejected_service_that_accumulates_low_ejector-1.json) 🟢
@@ -148,16 +149,17 @@ storage, together with the gas it consumed.
   - One invocation calls `eject` on a zombie service and then `transfer` to it. The
     `transfer` returns `WHO`. Nothing is burned.
 - [recreate_ejected_service-1](./tiny/recreate_ejected_service-1.json) 🟢
-  - The registrar ejects a zombie service and creates its id again with `new`, in one
-    invocation. Both host calls succeed. The prior account stays and gets the endowment.
-    The new account does not reach the state (GP 0.8.0 merge rule).
+  - The registrar ejects a zombie service which it supervises, and creates its id again with
+    `new`, in one invocation. Both host calls succeed. The new account reaches the state with
+    the endowment: the zombie takes its account from the post-state of its supervisor
+    (GP #539 `M(s)`).
 - [recreate_ejected_service_that_accumulates-1](./tiny/recreate_ejected_service_that_accumulates-1.json) 🟢
-  - Same as `recreate_ejected_service-1`, but the zombie accumulates a transfer in the same
-    round. The prior account stays and gets the transfer and the endowment.
+  - Same as `recreate_ejected_service-1`, but a transfer to the zombie is pending. It waits
+    while the registrar, the supervisor of the zombie, accumulates (GP #539 `T`). In the
+    next round it goes to the new account, which then has the transfer and the endowment.
 - [recreate_ejected_service_by_higher_registrar-1](./tiny/recreate_ejected_service_by_higher_registrar-1.json) 🟢
   - Same as `recreate_ejected_service_that_accumulates-1`, but the registrar id is higher
-    than the zombie id, so the own result of the zombie merges first. The prior account
-    stays and gets the transfer and the endowment.
+    than the zombie id. The new account has the transfer and the endowment.
 - [recreate_service_ejected_in_earlier_round-1](./tiny/recreate_service_ejected_in_earlier_round-1.json) 🟢
   - The registrar ejects a zombie service which has a work digest in the same round. In a
     later round of the same block the registrar creates the id again. The endowment
