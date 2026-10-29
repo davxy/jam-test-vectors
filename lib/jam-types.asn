@@ -139,8 +139,14 @@ ServiceInfo ::= SEQUENCE {
     version        U8,
     -- Hash of the service's code
     code-hash      OpaqueHash,
+    -- Designated supervisor of the service, possibly the service itself
+    supervisor     U32,
+    -- Creation time slot of the supervisor when it was designated
+    supervisor-creation-slot U32,
     -- Current balance of the service
     balance        U64,
+    -- Balance which only the supervisor of the service may transfer
+    supervisor-balance U64,
     -- Minimum gas required for processing an item
     min-item-gas   Gas,
     -- Minimum gas required for processing a memo

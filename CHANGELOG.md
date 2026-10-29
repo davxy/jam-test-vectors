@@ -1,3 +1,29 @@
+## [0.8.1] - Unreleased
+
+### Changed
+
+* Safrole: the keys of an offender in the pending validator set are replaced
+  by the null key, in `gamma_k` and in the epoch mark. Its Ed25519 part is
+  `0x02` followed by zeros, which is not a curve point.
+  (GP [#543](https://github.com/gavofyork/graypaper/pull/543))
+* New `compile` host call at index 9. The host calls from `machine` to
+  `provide` move up by one index.
+  (GP [#530](https://github.com/gavofyork/graypaper/pull/530))
+* Preimage lengths are bounded by `N_P` (below 2^32-2) instead of `N_L`.
+  The preimage host calls and `new` return `HUH` outside this bound.
+  (GP [#542](https://github.com/gavofyork/graypaper/pull/542))
+* Bandersnatch VRF specification draft 35 (`ark-vrf` 0.6.0) instead of
+  draft 29. The Bandersnatch keys of the trivial validators change, and so
+  do the ring commitments, the padding point, the ticket signatures and the
+  ticket ids. All STF vectors with Bandersnatch keys change.
+  (GP [#550](https://github.com/gavofyork/graypaper/pull/550))
+* Junior services: `ServiceInfo` carries `supervisor` and
+  `supervisor-creation-slot` after `code-hash`, and `supervisor-balance`
+  after `balance`. All accumulate and reports vectors change. New `supervisor`
+  host call at index 29. A service which is ejected and created again in one
+  invocation keeps the new account (`recreate_ejected_service*`).
+  (GP [#539](https://github.com/gavofyork/graypaper/pull/539))
+
 ## [0.8.0] - 10-09-2026
 
 ### Changed

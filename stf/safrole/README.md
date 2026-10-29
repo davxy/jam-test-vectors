@@ -10,12 +10,12 @@ Both the binary and json formats adhere to the overarching JAM protocol ASN.1
 
 ### Scheme
 
-- Bandersnatch VRF specification: https://github.com/davxy/bandersnatch-vrf-spec
+- Bandersnatch VRF specification (draft 35): https://github.com/davxy/bandersnatch-vrf-spec
 - Ring proof specification: https://github.com/davxy/ring-proof-spec
 
 ### Scheme Implementations
 
-- Rust: `ark-vrf` [v0.1.0](https://github.com/davxy/ark-vrf/tree/v0.1.0) ([crates.io](https://crates.io/crates/ark-vrf))
+- Rust: `ark-vrf` [v0.6.0](https://github.com/davxy/ark-vrf/tree/v0.6.0) ([crates.io](https://crates.io/crates/ark-vrf))
 - Python: `dotring` [WiP](https://github.com/PolkadotOpenSourceGrants/apply/pull/14)
 
 ### zk-SNARK SRS
